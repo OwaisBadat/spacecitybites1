@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Nav";
+import FloatingOrder from "@/components/FloatingOrder";
 import GoogleAnalytics from "@/components/analytics/GoogleAnalytics";
 import MetaPixel from "@/components/analytics/MetaPixel";
 import TikTokPixel from "@/components/analytics/TikTokPixel";
@@ -41,6 +42,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <MetaPixel />
         <TikTokPixel />
         <Nav />
+        <FloatingOrder />
         <main className="flex-1">{children}</main>
         <footer className="text-center py-8 text-neutral-600 text-xs border-t border-neutral-800 bg-black">
           <p className="font-bold text-neutral-400 mb-1">SPACE CITY BITES</p>

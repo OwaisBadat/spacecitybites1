@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 const links = [
@@ -12,10 +13,20 @@ const links = [
 export default function Nav() {
   const pathname = usePathname();
   return (
-    <nav className="flex items-center justify-between px-6 py-4 border-b border-neutral-800 sticky top-0 bg-black/95 backdrop-blur z-10">
-      <Link href="/" className="flex flex-col leading-none">
-        <span className="text-lg font-black tracking-tight text-white">SPACE CITY <span className="text-red-500">BITES</span></span>
-        <span className="text-[9px] uppercase tracking-[0.2em] text-neutral-500">Halal Street Food</span>
+    <nav className="flex items-center justify-between px-6 py-2 border-b border-neutral-800 sticky top-0 bg-black/95 backdrop-blur z-10">
+      <Link href="/" className="flex items-center gap-3">
+        <Image
+          src="/logo.png"
+          alt="Space City Bites"
+          width={56}
+          height={56}
+          className="rounded-full"
+          priority
+        />
+        <div className="flex flex-col leading-none">
+          <span className="text-base font-black tracking-tight text-white">SPACE CITY <span className="text-red-500">BITES</span></span>
+          <span className="text-[9px] uppercase tracking-[0.2em] text-neutral-500">Halal Street Food</span>
+        </div>
       </Link>
       <div className="flex items-center gap-6">
         {links.map(({ href, label }) => (

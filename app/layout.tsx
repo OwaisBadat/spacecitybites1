@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   description:
     "Space City Bites — 100% Halal street food in Houston, TX. 50 wing flavors, burgers, tacos, loaded fries and more. Big Cravings. Bigger Bites.",
   keywords: ["halal Houston", "Space City Bites", "halal wings Houston", "Houston street food", "halal restaurant Houston"],
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://spacecitybites.com"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://spacecitybites.com"),
   openGraph: {
     type: "website",
     siteName: "Space City Bites",

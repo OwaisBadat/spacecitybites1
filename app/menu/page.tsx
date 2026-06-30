@@ -1,3 +1,5 @@
+import FlavorPicker from "@/components/FlavorPicker";
+
 export const metadata = {
   title: "Menu",
   description: "Space City Bites full menu — 50 wing flavors, halal street food, Houston TX.",
@@ -60,7 +62,12 @@ const menu = [
   {
     category: "Breakfast Served All Day",
     items: [
-      { name: "Breakfast Sandwich", description: "Choice of brioche bun or butter croissant topped with fluffy eggs, crispy beef bacon and cheddar cheese.", price: "$7.97", popular: false },
+      {
+        name: "Breakfast Sandwich",
+        description: "Choice of brioche bun or butter croissant topped with fluffy eggs, crispy beef bacon and cheddar cheese.",
+        price: "$7.97",
+        popular: false,
+      },
     ],
   },
   {
@@ -138,6 +145,7 @@ export default function MenuPage() {
         Order on Uber Eats
       </a>
 
+      {/* Menu items */}
       <div className="space-y-12 mb-20">
         {menu.map(({ category, items }) => (
           <section key={category}>
@@ -168,21 +176,8 @@ export default function MenuPage() {
         ))}
       </div>
 
-      <section>
-        <h2 className="text-3xl font-black uppercase tracking-tight mb-2">Choose Your Flavor</h2>
-        <p className="text-neutral-400 text-sm mb-8">50 flavors. Wet sauces & dry rubs. Mix and match.</p>
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
-          {flavors.map(({ num, name }) => (
-            <div
-              key={num}
-              className="flex items-center gap-3 bg-neutral-900 border border-neutral-800 rounded-lg px-3 py-2"
-            >
-              <span className="text-red-500 font-black text-xs w-5 shrink-0">{num}</span>
-              <span className="text-neutral-200 text-sm">{name}</span>
-            </div>
-          ))}
-        </div>
-      </section>
+      {/* 50 Flavors — interactive picker */}
+      <FlavorPicker flavors={flavors} />
     </div>
   );
 }

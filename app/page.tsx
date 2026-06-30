@@ -1,17 +1,13 @@
 import Link from "next/link";
 import TodaysDeal from "@/components/TodaysDeal";
+import ReviewsStrip from "@/components/ReviewsStrip";
+import InstagramFeed from "@/components/InstagramFeed";
 
 const featured = [
   { name: "12 Bone-In Wings", desc: "Pick 2 flavors from 50 options", price: "$24.70", tag: "Best Seller" },
   { name: "Street Taco", desc: "Beef skirt steak, cilantro, salsa verde", price: "$2.50", tag: "Fan Fav" },
   { name: "Buffalo Chicken Loaded Fries", desc: "Crispy fries, buffalo chicken, nacho cheese", price: "$8.00+", tag: "Must Try" },
   { name: "Biscoff Pudding", desc: "Decadent, creamy, luscious", price: "$3.97", tag: "Popular" },
-];
-
-const reviews = [
-  { text: "Best wings in Houston, period. 50 flavors and every one slaps.", author: "Ahmad K.", stars: 5 },
-  { text: "Halal, fresh, and open late. This spot is everything.", author: "Mariam S.", stars: 5 },
-  { text: "Street tacos for $2.50?? Unreal. I come every week.", author: "Carlos R.", stars: 5 },
 ];
 
 export default function Home() {
@@ -64,6 +60,7 @@ export default function Home() {
         ))}
       </section>
 
+      {/* Today's Deal — dynamic */}
       <TodaysDeal />
 
       {/* Featured Items */}
@@ -94,34 +91,28 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Social proof */}
-      <section className="border-t border-neutral-800 bg-neutral-950 py-16 px-4 sm:px-6">
-        <p className="text-red-500 text-xs uppercase tracking-widest mb-2 text-center">What People Are Saying</p>
-        <h2 className="text-3xl font-black uppercase tracking-tight mb-10 text-center">⭐⭐⭐⭐⭐</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-4xl mx-auto">
-          {reviews.map(({ text, author }) => (
-            <div key={author} className="bg-neutral-900 border border-neutral-800 rounded-2xl p-5">
-              <p className="text-yellow-400 text-sm mb-3">★★★★★</p>
-              <p className="text-neutral-300 text-sm leading-relaxed mb-3">&ldquo;{text}&rdquo;</p>
-              <p className="text-neutral-500 text-xs font-bold">— {author}</p>
-            </div>
-          ))}
-        </div>
-      </section>
+      {/* Google Reviews strip */}
+      <ReviewsStrip />
 
-      {/* Social CTA */}
-      <section className="border-t border-neutral-800 py-14 text-center px-6">
-        <p className="text-neutral-400 mb-3 text-xs uppercase tracking-widest">Follow the moves</p>
+      {/* Loyalty teaser */}
+      <section className="border-t border-neutral-800 bg-neutral-950 py-16 px-4 sm:px-6 text-center">
+        <p className="text-red-500 text-xs uppercase tracking-widest mb-2">Coming Soon</p>
+        <h2 className="text-2xl sm:text-3xl font-black uppercase tracking-tight mb-3">SCB Rewards</h2>
+        <p className="text-neutral-400 text-sm max-w-md mx-auto mb-6">
+          Every bite earns points. Stack them up for free wings, deals, and exclusive drops. Loyalty program launching soon — follow us to be first.
+        </p>
         <a
           href="https://instagram.com/space_city_bites"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-2xl sm:text-3xl font-black text-white hover:text-red-400 transition-colors"
+          className="inline-block border-2 border-red-600 text-red-400 hover:bg-red-600 hover:text-white font-black uppercase tracking-wider px-6 py-3 rounded-full transition-colors text-sm"
         >
-          @space_city_bites
+          Follow for Updates
         </a>
-        <p className="text-neutral-500 text-sm mt-2">Instagram · TikTok</p>
       </section>
+
+      {/* Instagram feed */}
+      <InstagramFeed />
     </div>
   );
 }

@@ -4,10 +4,13 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import OpenStatus from "@/components/OpenStatus";
 
 const links = [
   { href: "/", label: "Home" },
   { href: "/menu", label: "Menu" },
+  { href: "/about", label: "About" },
+  { href: "/faq", label: "FAQ" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -28,14 +31,14 @@ export default function Nav() {
             priority
             unoptimized
           />
-          <div className="flex flex-col leading-none">
+          <div className="flex flex-col leading-none gap-1">
             <span className="text-base font-black tracking-tight text-white">SPACE CITY <span className="text-red-500">BITES</span></span>
-            <span className="text-[9px] uppercase tracking-[0.2em] text-neutral-500">Halal Street Food</span>
+            <OpenStatus />
           </div>
         </Link>
 
         {/* Desktop nav */}
-        <div className="hidden sm:flex items-center gap-6">
+        <div className="hidden lg:flex items-center gap-5">
           {links.map(({ href, label }) => (
             <Link
               key={href}
@@ -59,19 +62,19 @@ export default function Nav() {
 
         {/* Mobile hamburger */}
         <button
-          className="sm:hidden flex flex-col gap-1.5 p-2"
+          className="lg:hidden flex flex-col gap-1.5 p-2"
           onClick={() => setOpen(!open)}
           aria-label="Toggle menu"
         >
-          <span className={`block w-6 h-0.5 bg-white transition-all ${open ? "rotate-45 translate-y-2" : ""}`} />
-          <span className={`block w-6 h-0.5 bg-white transition-all ${open ? "opacity-0" : ""}`} />
-          <span className={`block w-6 h-0.5 bg-white transition-all ${open ? "-rotate-45 -translate-y-2" : ""}`} />
+          <span className={`block w-6 h-0.5 bg-white transition-all duration-200 ${open ? "rotate-45 translate-y-2" : ""}`} />
+          <span className={`block w-6 h-0.5 bg-white transition-all duration-200 ${open ? "opacity-0" : ""}`} />
+          <span className={`block w-6 h-0.5 bg-white transition-all duration-200 ${open ? "-rotate-45 -translate-y-2" : ""}`} />
         </button>
       </nav>
 
       {/* Mobile menu drawer */}
       {open && (
-        <div className="sm:hidden fixed inset-0 top-[68px] bg-black z-30 flex flex-col px-6 pt-8 gap-6">
+        <div className="lg:hidden fixed inset-0 top-[68px] bg-black z-30 flex flex-col px-6 pt-8 gap-5 overflow-y-auto pb-32">
           {links.map(({ href, label }) => (
             <Link
               key={href}
@@ -84,18 +87,26 @@ export default function Nav() {
               {label}
             </Link>
           ))}
-          <a
-            href="https://www.ubereats.com/store/space-city-bites/BEvV1p9CQxucnTUn6EpVHw"
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={() => setOpen(false)}
-            className="mt-4 bg-red-600 text-white text-center font-black uppercase tracking-wider px-6 py-4 rounded-full text-lg"
-          >
-            Order Now on Uber Eats
-          </a>
-          <div className="mt-4 text-neutral-500 text-sm">
-            <p>(713) 621-3128</p>
-            <p>3729 W Alabama St, Unit C</p>
+          <div className="flex gap-3 mt-4">
+            <a
+              href="tel:+17136213128"
+              className="flex-1 bg-neutral-800 text-white text-center font-black uppercase tracking-wider px-4 py-4 rounded-full"
+            >
+              📞 Call
+            </a>
+            <a
+              href="https://www.ubereats.com/store/space-city-bites/BEvV1p9CQxucnTUn6EpVHw"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setOpen(false)}
+              className="flex-[2] bg-red-600 text-white text-center font-black uppercase tracking-wider px-4 py-4 rounded-full"
+            >
+              🛒 Order Now
+            </a>
+          </div>
+          <div className="mt-4 text-neutral-500 text-sm border-t border-neutral-800 pt-4">
+            <p>3729 W Alabama St, Unit C · Houston, TX</p>
+            <p className="mt-1">Mon–Thu 12pm–12am · Fri–Sat 12pm–2am · Sun 12pm–9pm</p>
           </div>
         </div>
       )}

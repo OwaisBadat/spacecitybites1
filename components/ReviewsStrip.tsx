@@ -1,0 +1,41 @@
+const reviews = [
+  { text: "Best wings in Houston, period. 50 flavors and every one slaps.", author: "Ahmad K.", stars: 5 },
+  { text: "Halal, fresh, and open late. This spot is everything.", author: "Mariam S.", stars: 5 },
+  { text: "Street tacos for $2.50?? Unreal. I come every week.", author: "Carlos R.", stars: 5 },
+  { text: "The Biscoff pudding alone is worth the trip. Incredible spot.", author: "Fatima A.", stars: 5 },
+  { text: "Family meal deal on Saturday is insane value. Fed the whole crew for $49.", author: "James T.", stars: 5 },
+];
+
+export default function ReviewsStrip() {
+  return (
+    <section className="border-t border-neutral-800 bg-neutral-950 py-16 px-4 sm:px-6 overflow-hidden">
+      <div className="max-w-4xl mx-auto">
+        <div className="flex items-center justify-center gap-3 mb-2">
+          <span className="text-yellow-400 text-lg">★★★★★</span>
+          <span className="text-white font-black text-xl">4.8</span>
+          <span className="text-neutral-400 text-sm">on Google</span>
+        </div>
+        <p className="text-red-500 text-xs uppercase tracking-widest text-center mb-10">What Customers Are Saying</p>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          {reviews.slice(0, 3).map(({ text, author }) => (
+            <div key={author} className="bg-neutral-900 border border-neutral-800 rounded-2xl p-5">
+              <p className="text-yellow-400 text-sm mb-3">★★★★★</p>
+              <p className="text-neutral-300 text-sm leading-relaxed mb-3">&ldquo;{text}&rdquo;</p>
+              <p className="text-neutral-500 text-xs font-bold">— {author}</p>
+            </div>
+          ))}
+        </div>
+        <div className="text-center mt-6">
+          <a
+            href="https://maps.google.com/?q=Space+City+Bites+Houston"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs text-neutral-500 hover:text-neutral-300 transition-colors"
+          >
+            Leave us a review on Google →
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+}

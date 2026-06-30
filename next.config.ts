@@ -18,13 +18,16 @@ const securityHeaders = [
       "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
       "font-src 'self' https://fonts.gstatic.com",
       "connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://www.facebook.com https://analytics.tiktok.com",
-      "img-src 'self' data: blob: https://www.google-analytics.com https://www.facebook.com https://www.googletagmanager.com",
+      "img-src 'self' data: blob: https://www.google-analytics.com https://www.facebook.com https://www.googletagmanager.com https://raw.githubusercontent.com",
       "frame-src 'self' https://www.google.com https://www.tiktok.com https://www.instagram.com",
     ].join("; "),
   },
 ];
 
 const nextConfig: NextConfig = {
+  images: {
+    domains: ["raw.githubusercontent.com"],
+  },
   async headers() {
     return [
       {

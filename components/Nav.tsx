@@ -16,12 +16,13 @@ export default function Nav() {
     <nav className="flex items-center justify-between px-6 py-2 border-b border-neutral-800 sticky top-0 bg-black/95 backdrop-blur z-10">
       <Link href="/" className="flex items-center gap-3">
         <Image
-          src="/logo.png"
+          src="https://raw.githubusercontent.com/OwaisBadat/spacecitybites1/3cb7bdd8e5f9852e037f839bf6740eafae7a6894/Circle%20Logo.PNG"
           alt="Space City Bites"
           width={56}
           height={56}
           className="rounded-full"
           priority
+          unoptimized
         />
         <div className="flex flex-col leading-none">
           <span className="text-base font-black tracking-tight text-white">SPACE CITY <span className="text-red-500">BITES</span></span>

@@ -15,9 +15,9 @@ export default function TodaysDeal() {
   const dealIndex = todayIndex === 0 ? 6 : todayIndex - 1;
 
   return (
-    <section className="max-w-3xl mx-auto px-4 sm:px-6 py-16">
-      <p className="text-red-500 text-xs uppercase tracking-widest mb-2 text-center">Something delicious. Every day.</p>
-      <h2 className="text-3xl sm:text-4xl font-black uppercase tracking-tight mb-10 text-center">Daily Deals</h2>
+    <div className="max-w-3xl mx-auto">
+      <p className="text-red-200 text-xs uppercase tracking-widest mb-2 text-center">Something delicious. Every day.</p>
+      <h2 className="text-3xl sm:text-4xl font-black uppercase tracking-tight mb-10 text-center text-white">Daily Deals</h2>
       <div className="space-y-3">
         {deals.map(({ day, deal, detail, emoji }, i) => {
           const isToday = i === dealIndex;
@@ -26,20 +26,20 @@ export default function TodaysDeal() {
               key={day}
               className={`flex items-center gap-4 rounded-xl px-5 py-4 border transition-all ${
                 isToday
-                  ? "bg-red-600 border-red-500 shadow-lg shadow-red-900/40 scale-[1.02]"
-                  : "bg-neutral-900 border-neutral-800"
+                  ? "bg-white border-white shadow-xl scale-[1.02]"
+                  : "bg-red-800/60 border-red-600/40 hover:bg-red-800/80"
               }`}
             >
-              <span className={`font-black text-xs w-10 shrink-0 ${isToday ? "text-white" : "text-red-500"}`}>
+              <span className={`font-black text-xs w-10 shrink-0 ${isToday ? "text-red-600" : "text-red-200"}`}>
                 {day}
               </span>
               <span className="text-xl shrink-0">{emoji}</span>
               <div className="flex-1 min-w-0">
-                <p className="font-black text-white">{deal}</p>
-                <p className={`text-sm truncate ${isToday ? "text-red-100" : "text-neutral-400"}`}>{detail}</p>
+                <p className={`font-black ${isToday ? "text-red-700" : "text-white"}`}>{deal}</p>
+                <p className={`text-sm truncate ${isToday ? "text-red-500" : "text-red-200"}`}>{detail}</p>
               </div>
               {isToday && (
-                <span className="shrink-0 bg-white text-red-600 text-[10px] font-black uppercase px-2 py-1 rounded-full">
+                <span className="shrink-0 bg-red-600 text-white text-[10px] font-black uppercase px-2 py-1 rounded-full">
                   Today
                 </span>
               )}
@@ -47,6 +47,6 @@ export default function TodaysDeal() {
           );
         })}
       </div>
-    </section>
+    </div>
   );
 }

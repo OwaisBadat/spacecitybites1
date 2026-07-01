@@ -1,21 +1,29 @@
 import Link from "next/link";
+import Image from "next/image";
 import TodaysDeal from "@/components/TodaysDeal";
 import ReviewsStrip from "@/components/ReviewsStrip";
 import InstagramFeed from "@/components/InstagramFeed";
 
 const featured = [
-  { name: "12 Bone-In Wings", desc: "Pick 2 flavors from 50 options", price: "$24.70", tag: "Best Seller" },
-  { name: "Street Taco", desc: "Beef skirt steak, cilantro, salsa verde", price: "$2.50", tag: "Fan Fav" },
-  { name: "Buffalo Chicken Loaded Fries", desc: "Crispy fries, buffalo chicken, nacho cheese", price: "$8.00+", tag: "Must Try" },
-  { name: "Biscoff Pudding", desc: "Decadent, creamy, luscious", price: "$3.97", tag: "Popular" },
+  { name: "12 Bone-In Wings", desc: "Pick 2 flavors from 50 options", price: "$24.70", tag: "Best Seller", img: "/Iceman Wings.PNG" },
+  { name: "Iceman Burger", desc: "Two hot beef patties, cheese, beef bacon, egg", price: "$4.99", tag: "Fan Fav", img: "/Iceman Burger.PNG" },
+  { name: "Iceman Hot Dog", desc: "Marinated beef hot dog loaded your way", price: "$9.99", tag: "Must Try", img: "/Iceman HotDog.PNG" },
+  { name: "Biscoff Pudding", desc: "Decadent, creamy, luscious", price: "$3.97", tag: "Popular", img: null },
 ];
 
 export default function Home() {
   return (
     <div className="pb-24 sm:pb-0">
       {/* Hero */}
-      <section className="relative flex flex-col items-center justify-center text-center px-6 py-32 sm:py-40 overflow-hidden bg-black">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-950/60 via-black to-black" />
+      <section className="relative flex flex-col items-center justify-center text-center px-6 py-32 sm:py-48 overflow-hidden bg-black min-h-[600px]">
+        <Image
+          src="/Iceman Wings.PNG"
+          alt="Space City Bites signature wings"
+          fill
+          className="object-cover object-center opacity-40"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/30" />
         <div className="relative z-10 max-w-2xl mx-auto">
           <p className="text-red-500 text-xs uppercase tracking-[0.3em] mb-4 font-bold">
             ★ 100% Halal · Houston, TX ★
@@ -68,15 +76,23 @@ export default function Home() {
         <p className="text-red-500 text-xs uppercase tracking-widest mb-2 text-center">Most Ordered</p>
         <h2 className="text-3xl sm:text-4xl font-black uppercase tracking-tight mb-10 text-center">Fan Favorites</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          {featured.map(({ name, desc, price, tag }) => (
-            <div key={name} className="bg-neutral-900 border border-neutral-800 rounded-2xl p-5 flex justify-between gap-4 hover:border-red-800 transition-colors">
-              <div>
-                <span className="text-[10px] uppercase tracking-wider bg-red-500/20 text-red-400 px-2 py-0.5 rounded-full mb-2 inline-block">{tag}</span>
-                <p className="font-black text-white text-lg leading-tight">{name}</p>
-                <p className="text-neutral-400 text-sm mt-1">{desc}</p>
-              </div>
-              <div className="text-right shrink-0">
-                <p className="text-red-400 font-black text-lg">{price}</p>
+          {featured.map(({ name, desc, price, tag, img }) => (
+            <div key={name} className="bg-neutral-900 border border-neutral-800 rounded-2xl overflow-hidden hover:border-red-800 transition-colors">
+              {img && (
+                <div className="relative h-48 w-full">
+                  <Image src={img} alt={name} fill className="object-cover object-center" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-neutral-900 via-neutral-900/20 to-transparent" />
+                </div>
+              )}
+              <div className="p-5 flex justify-between gap-4">
+                <div>
+                  <span className="text-[10px] uppercase tracking-wider bg-red-500/20 text-red-400 px-2 py-0.5 rounded-full mb-2 inline-block">{tag}</span>
+                  <p className="font-black text-white text-lg leading-tight">{name}</p>
+                  <p className="text-neutral-400 text-sm mt-1">{desc}</p>
+                </div>
+                <div className="text-right shrink-0">
+                  <p className="text-red-400 font-black text-lg">{price}</p>
+                </div>
               </div>
             </div>
           ))}

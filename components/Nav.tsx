@@ -20,7 +20,7 @@ export default function Nav() {
 
   return (
     <>
-      <nav className="flex items-center justify-between px-4 sm:px-6 py-2 border-b border-neutral-800 sticky top-0 bg-black/95 backdrop-blur z-40">
+      <nav className="flex items-center justify-between px-4 sm:px-6 py-2 border-b border-blue-900/40 sticky top-0 bg-black/95 backdrop-blur z-40">
         <Link href="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
           <Image
             src="https://raw.githubusercontent.com/OwaisBadat/spacecitybites1/3cb7bdd8e5f9852e037f839bf6740eafae7a6894/Circle%20Logo.PNG"

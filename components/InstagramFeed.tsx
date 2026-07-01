@@ -2,7 +2,7 @@
 
 export default function InstagramFeed() {
   return (
-    <section className="bg-gradient-to-b from-blue-950 to-black py-16 px-4 sm:px-6 text-center">
+    <section className="bg-gradient-to-b from-blue-900 to-neutral-950 py-16 px-4 sm:px-6 text-center">
       <p className="text-blue-400 text-xs uppercase tracking-widest mb-2">Follow the vibe</p>
       <a
         href="https://instagram.com/space_city_bites"

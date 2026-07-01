@@ -24,8 +24,8 @@ export default function Home() {
           className="object-cover object-center opacity-75"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/65 to-black/20" />
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-950/50 via-transparent to-red-950/50" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-black/10" />
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-950/30 via-transparent to-red-950/30" />
         <div className="relative z-10 max-w-2xl mx-auto">
           <p className="text-blue-400 text-xs uppercase tracking-[0.3em] mb-4 font-bold">
             ★ 100% Halal · Houston, TX ★
@@ -55,8 +55,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── SECTION 2: INFO STRIP — solid blue-950 ── */}
-      <section className="grid grid-cols-2 sm:grid-cols-4 divide-x divide-blue-900/40 border-y border-blue-900/40 bg-blue-950">
+      {/* ── SECTION 2: INFO STRIP — solid blue-900 ── */}
+      <section className="grid grid-cols-2 sm:grid-cols-4 divide-x divide-blue-800/60 border-y border-blue-800/60 bg-blue-900">
         {[
           { label: "Location", value: "3729 W Alabama St, Unit C" },
           { label: "Mon – Thu", value: "12pm – 12am" },
@@ -71,17 +71,17 @@ export default function Home() {
       </section>
 
       {/* ── SECTION 3: TODAY'S DEAL — bold red block ── */}
-      <section className="bg-red-700 py-16 px-4 sm:px-6">
+      <section className="bg-red-600 py-16 px-4 sm:px-6">
         <TodaysDeal />
       </section>
 
       {/* ── SECTION 4: FAN FAVORITES — Poster1 logo art as texture ── */}
-      <section className="relative py-16 px-4 sm:px-6 overflow-hidden bg-black">
+      <section className="relative py-16 px-4 sm:px-6 overflow-hidden bg-neutral-900">
         <Image
           src="/Poster1.PNG"
           alt=""
           fill
-          className="object-cover object-center opacity-[0.07]"
+          className="object-cover object-center opacity-[0.12]"
           aria-hidden="true"
         />
         <div className="relative z-10 max-w-4xl mx-auto">
@@ -129,10 +129,10 @@ export default function Home() {
           src="/Iceman Burger.PNG"
           alt=""
           fill
-          className="object-cover object-center opacity-50"
+          className="object-cover object-center opacity-65"
           aria-hidden="true"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-black/40" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-black/20" />
         <div className="relative z-10 max-w-lg mx-auto">
           <p className="text-blue-400 text-xs uppercase tracking-widest mb-2">Coming Soon</p>
           <h2 className="text-3xl sm:text-4xl font-black uppercase tracking-tight mb-4 text-white">SCB Rewards</h2>

@@ -15,10 +15,10 @@ export default function ReviewsStrip() {
         src="/Iceman HotDog.PNG"
         alt=""
         fill
-        className="object-cover object-center opacity-20"
+        className="object-cover object-center opacity-35"
         aria-hidden="true"
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-neutral-950/90 to-black/80" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-neutral-950/70 to-black/60" />
       <div className="relative z-10 max-w-4xl mx-auto">
         <div className="flex items-center justify-center gap-3 mb-2">
           <span className="text-yellow-400 text-lg">★★★★★</span>

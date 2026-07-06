@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export const metadata = {
   title: "FAQ",
   description: "Frequently asked questions about Space City Bites — halal, hours, delivery, ordering, and more.",
@@ -48,9 +50,26 @@ const faqs = [
 
 export default function FAQPage() {
   return (
-    <div className="max-w-2xl mx-auto px-6 py-16 pb-24 sm:pb-16">
-      <h1 className="text-4xl font-black uppercase tracking-tight mb-2">FAQ</h1>
-      <p className="text-neutral-400 mb-12">Everything you need to know.</p>
+    <div>
+      {/* Hero */}
+      <section className="relative flex flex-col items-center justify-center text-center px-6 py-28 sm:py-40 overflow-hidden bg-black min-h-[400px]">
+        <Image
+          src="/Catering Card.PNG"
+          alt=""
+          fill
+          className="object-cover object-center opacity-50"
+          priority
+          aria-hidden="true"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-black/20" />
+        <div className="relative z-10 max-w-xl mx-auto">
+          <p className="text-blue-400 text-xs uppercase tracking-[0.3em] mb-3 font-bold">Got Questions?</p>
+          <h1 className="text-5xl sm:text-7xl font-black uppercase tracking-tight text-white mb-3 leading-none">FAQ</h1>
+          <p className="text-neutral-300 text-sm">Everything you need to know.</p>
+        </div>
+      </section>
+
+      <div className="max-w-2xl mx-auto px-6 py-16 pb-24 sm:pb-16">
 
       <div className="space-y-6">
         {faqs.map(({ q, a }) => (
@@ -71,6 +90,7 @@ export default function FAQPage() {
           (713) 621-3128
         </a>
       </div>
+    </div>
     </div>
   );
 }

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import FlavorPicker from "@/components/FlavorPicker";
 
 export const metadata = {
@@ -133,17 +134,33 @@ const menu = [
 
 export default function MenuPage() {
   return (
-    <div className="max-w-3xl mx-auto px-6 py-16">
-      <h1 className="text-4xl font-black uppercase tracking-tight mb-2">Menu</h1>
-      <p className="text-neutral-400 mb-4">100% Halal. Fresh. Bold. Houston street food.</p>
-      <a
-        href="https://www.ubereats.com/store/space-city-bites/BEvV1p9CQxucnTUn6EpVHw"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="inline-block mb-12 bg-red-600 hover:bg-red-500 text-white font-black px-6 py-3 rounded-full transition-colors uppercase tracking-wider text-sm"
-      >
-        Order on Uber Eats
-      </a>
+    <div>
+      {/* Hero */}
+      <section className="relative flex flex-col items-center justify-center text-center px-6 py-28 sm:py-40 overflow-hidden bg-black min-h-[400px]">
+        <Image
+          src="/Breakfeast Sandwhich.PNG"
+          alt="Space City Bites breakfast sandwich"
+          fill
+          className="object-cover object-center opacity-60"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-black/10" />
+        <div className="relative z-10 max-w-xl mx-auto">
+          <p className="text-blue-400 text-xs uppercase tracking-[0.3em] mb-3 font-bold">100% Halal · Houston, TX</p>
+          <h1 className="text-5xl sm:text-7xl font-black uppercase tracking-tight text-white mb-3 leading-none">Menu</h1>
+          <p className="text-neutral-300 text-sm mb-6">Fresh. Bold. Made to order.</p>
+          <a
+            href="https://www.ubereats.com/store/space-city-bites/BEvV1p9CQxucnTUn6EpVHw"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-red-600 hover:bg-red-500 text-white font-black px-8 py-4 rounded-full transition-colors uppercase tracking-wider text-sm shadow-lg shadow-red-900/40"
+          >
+            Order on Uber Eats
+          </a>
+        </div>
+      </section>
+
+      <div className="max-w-3xl mx-auto px-6 py-16">
 
       {/* Menu items */}
       <div className="space-y-12 mb-20">
@@ -178,6 +195,7 @@ export default function MenuPage() {
 
       {/* 50 Flavors — interactive picker */}
       <FlavorPicker flavors={flavors} />
+    </div>
     </div>
   );
 }

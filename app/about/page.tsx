@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export const metadata = {
   title: "About",
   description: "The story behind Space City Bites — 100% Halal street food born in Houston, TX.",
@@ -5,9 +7,26 @@ export const metadata = {
 
 export default function AboutPage() {
   return (
-    <div className="max-w-2xl mx-auto px-6 py-16 pb-24 sm:pb-16">
-      <h1 className="text-4xl font-black uppercase tracking-tight mb-2">Our Story</h1>
-      <p className="text-red-500 text-xs uppercase tracking-widest mb-12">Space City Bites · Houston, TX</p>
+    <div>
+      {/* Hero */}
+      <section className="relative flex flex-col items-center justify-center text-center px-6 py-28 sm:py-40 overflow-hidden bg-black min-h-[400px]">
+        <Image
+          src="/Poster1.PNG"
+          alt=""
+          fill
+          className="object-cover object-center opacity-30"
+          priority
+          aria-hidden="true"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-black/20" />
+        <div className="relative z-10 max-w-xl mx-auto">
+          <p className="text-blue-400 text-xs uppercase tracking-[0.3em] mb-3 font-bold">Space City Bites · Houston, TX</p>
+          <h1 className="text-5xl sm:text-7xl font-black uppercase tracking-tight text-white mb-3 leading-none">Our Story</h1>
+          <p className="text-neutral-300 text-sm">Born in Houston. Built for the community.</p>
+        </div>
+      </section>
+
+      <div className="max-w-2xl mx-auto px-6 py-16 pb-24 sm:pb-16">
 
       <div className="space-y-6 text-neutral-300 leading-relaxed">
         <p>
@@ -54,6 +73,7 @@ export default function AboutPage() {
           Order Now
         </a>
       </div>
+    </div>
     </div>
   );
 }

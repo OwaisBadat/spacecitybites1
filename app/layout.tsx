@@ -3,6 +3,7 @@ import { Geist } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Nav";
 import FloatingOrder from "@/components/FloatingOrder";
+import { Analytics } from "@vercel/analytics/next";
 import GoogleAnalytics from "@/components/analytics/GoogleAnalytics";
 import MetaPixel from "@/components/analytics/MetaPixel";
 import TikTokPixel from "@/components/analytics/TikTokPixel";
@@ -90,6 +91,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <p>3729 W Alabama St Unit C · Houston, TX 77027 · (713) 621-3128</p>
           <p className="mt-1">&copy; {new Date().getFullYear()} Space City Bites · 100% Halal</p>
         </footer>
+        <Analytics />
       </body>
     </html>
   );

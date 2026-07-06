@@ -1,5 +1,7 @@
 "use client";
 
+import Script from "next/script";
+
 export default function InstagramFeed() {
   return (
     <section className="bg-gradient-to-b from-blue-900 to-neutral-950 py-16 px-4 sm:px-6 text-center">
@@ -12,18 +14,17 @@ export default function InstagramFeed() {
       >
         @space_city_bites
       </a>
-      <p className="text-blue-300/50 text-sm mt-2 mb-8">Instagram · TikTok</p>
+      <p className="text-blue-300/50 text-sm mt-2 mb-8">Instagram</p>
 
-      <div className="max-w-4xl mx-auto">
-        <script src="https://static.elfsight.com/platform/platform.js" async></script>
-        <div
-          className="elfsight-app-placeholder bg-blue-950/50 border border-blue-900/40 rounded-2xl p-10 text-blue-300/50 text-sm"
-          data-elfsight-app-lazy
-        >
-          <p className="mb-2 text-lg">📸</p>
-          <p>Instagram feed coming soon.</p>
-          <p className="text-xs mt-1">Connect at <span className="text-blue-400">elfsight.com</span> to embed your latest posts.</p>
-        </div>
+      <div className="max-w-5xl mx-auto">
+        <div data-behold-id="mwMCJlShiIs6EwtMEKmt"></div>
+        <Script
+          id="behold-widget"
+          strategy="lazyOnload"
+          dangerouslySetInnerHTML={{
+            __html: `(function(){const d=document,s=d.createElement("script");s.type="module";s.src="https://w.behold.so/widget.js";d.head.append(s);})();`,
+          }}
+        />
       </div>
     </section>
   );

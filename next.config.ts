@@ -17,7 +17,7 @@ const securityHeaders = [
       "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://connect.facebook.net https://analytics.tiktok.com https://w.behold.so",
       "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://w.behold.so",
       "font-src 'self' https://fonts.gstatic.com",
-      "connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://www.facebook.com https://analytics.tiktok.com https://behold.so https://w.behold.so",
+      "connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://www.facebook.com https://analytics.tiktok.com https://behold.so https://w.behold.so https://feeds.behold.so",
       "img-src 'self' data: blob: https://www.google-analytics.com https://www.facebook.com https://www.googletagmanager.com https://raw.githubusercontent.com https://behold.so https://*.behold.so https://cdninstagram.com https://*.cdninstagram.com https://*.fbcdn.net",
       "frame-src 'self' https://www.google.com https://www.tiktok.com https://www.instagram.com",
     ].join("; "),

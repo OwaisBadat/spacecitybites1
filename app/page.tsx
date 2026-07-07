@@ -38,7 +38,7 @@ export default function Home() {
           <p className="text-blue-200/70 mb-8 text-sm">50 Wing Flavors · Halal Street Food · Open Late</p>
           <div className="flex gap-3 flex-wrap justify-center">
             <a
-              href="https://www.ubereats.com/store/space-city-bites/BEvV1p9CQxucnTUn6EpVHw"
+              href="https://wings-87-alabama-street-houston.cloveronline.com"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-red-600 hover:bg-red-500 text-white font-black px-8 py-4 rounded-full transition-colors uppercase tracking-wider text-sm shadow-lg shadow-red-900/40"

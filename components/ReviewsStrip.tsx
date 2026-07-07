@@ -39,12 +39,12 @@ export default function ReviewsStrip() {
 
         <div className="text-center mt-8">
           <a
-            href="https://maps.google.com/?q=Space+City+Bites+Houston"
+            href="https://g.page/r/CWrsJBfZH7BdEBM/review"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-xs text-neutral-500 hover:text-neutral-300 transition-colors"
+            className="text-sm text-yellow-500 hover:text-yellow-400 transition-colors font-semibold"
           >
-            Leave us a review on Google →
+            ⭐ Leave us a Google Review →
           </a>
         </div>
       </div>

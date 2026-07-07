@@ -65,7 +65,7 @@ export default function AboutPage() {
 
       <div className="mt-12 text-center">
         <a
-          href="https://www.ubereats.com/store/space-city-bites/BEvV1p9CQxucnTUn6EpVHw"
+          href="https://wings-87-alabama-street-houston.cloveronline.com"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block bg-red-600 hover:bg-red-500 text-white font-black uppercase tracking-wider px-8 py-4 rounded-full transition-colors"

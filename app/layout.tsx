@@ -90,6 +90,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <p className="font-bold text-neutral-400 mb-1">SPACE CITY BITES</p>
           <p>3729 W Alabama St Unit C · Houston, TX 77027 · (713) 621-3128</p>
           <p className="mt-1">&copy; {new Date().getFullYear()} Space City Bites · 100% Halal</p>
+          <a
+            href="https://g.page/r/CWrsJBfZH7BdEBM/review"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block mt-3 text-yellow-500 hover:text-yellow-400 transition-colors font-semibold"
+          >
+            ⭐ Leave us a Google Review
+          </a>
         </footer>
         <Analytics />
       </body>

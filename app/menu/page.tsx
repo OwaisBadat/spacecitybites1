@@ -150,12 +150,12 @@ export default function MenuPage() {
           <h1 className="text-5xl sm:text-7xl font-black uppercase tracking-tight text-white mb-3 leading-none">Menu</h1>
           <p className="text-neutral-300 text-sm mb-6">Fresh. Bold. Made to order.</p>
           <a
-            href="https://www.ubereats.com/store/space-city-bites/BEvV1p9CQxucnTUn6EpVHw"
+            href="https://wings-87-alabama-street-houston.cloveronline.com"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-red-600 hover:bg-red-500 text-white font-black px-8 py-4 rounded-full transition-colors uppercase tracking-wider text-sm shadow-lg shadow-red-900/40"
           >
-            Order on Uber Eats
+            Order Online
           </a>
         </div>
       </section>

@@ -43,7 +43,7 @@ export default function Home() {
               rel="noopener noreferrer"
               className="bg-red-600 hover:bg-red-500 text-white font-black px-8 py-4 rounded-full transition-colors uppercase tracking-wider text-sm shadow-lg shadow-red-900/40"
             >
-              Order on Uber Eats
+              Order Now
             </a>
             <Link
               href="/menu"

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import OrderButton from "@/components/OrderButton";
 
 export const metadata = {
   title: "About",
@@ -64,14 +65,12 @@ export default function AboutPage() {
       </div>
 
       <div className="mt-12 text-center">
-        <a
-          href="https://wings-87-alabama-street-houston.cloveronline.com"
-          target="_blank"
-          rel="noopener noreferrer"
+        <OrderButton
+          location="about_page"
           className="inline-block bg-red-600 hover:bg-red-500 text-white font-black uppercase tracking-wider px-8 py-4 rounded-full transition-colors"
         >
           Order Now
-        </a>
+        </OrderButton>
       </div>
     </div>
     </div>

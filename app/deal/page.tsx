@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import { track } from "@vercel/analytics";
 
 const deals = [
   { day: "Sunday",    emoji: "🥪", name: "Breakfast Sandwich $5.99",  detail: "All day long",                     sub: "Brioche or butter croissant" },
@@ -77,6 +78,7 @@ export default function DealPage() {
               target="_blank"
               rel="noopener noreferrer"
               className="block w-full bg-red-600 hover:bg-red-500 text-white text-center font-black uppercase tracking-widest text-sm py-5 rounded-full transition-colors shadow-lg shadow-red-900/50"
+              onClick={() => track("order_click", { location: "deal_page", deal: deal.day })}
             >
               Order Now →
             </a>

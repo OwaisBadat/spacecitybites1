@@ -3,6 +3,7 @@ import Image from "next/image";
 import TodaysDeal from "@/components/TodaysDeal";
 import ReviewsStrip from "@/components/ReviewsStrip";
 import InstagramFeed from "@/components/InstagramFeed";
+import OrderButton from "@/components/OrderButton";
 
 const featured = [
   { name: "12 Bone-In Wings", desc: "Pick 2 flavors from 50 options", price: "$24.70", tag: "Best Seller", img: "/Iceman Wings.PNG" },
@@ -37,14 +38,12 @@ export default function Home() {
           <p className="text-lg sm:text-xl text-white font-bold mt-4 mb-1">Big Cravings. Bigger Bites.</p>
           <p className="text-blue-200/70 mb-8 text-sm">50 Wing Flavors · Halal Street Food · Open Late</p>
           <div className="flex gap-3 flex-wrap justify-center">
-            <a
-              href="https://wings-87-alabama-street-houston.cloveronline.com"
-              target="_blank"
-              rel="noopener noreferrer"
+            <OrderButton
+              location="homepage_hero"
               className="bg-red-600 hover:bg-red-500 text-white font-black px-8 py-4 rounded-full transition-colors uppercase tracking-wider text-sm shadow-lg shadow-red-900/40"
             >
               Order Now
-            </a>
+            </OrderButton>
             <Link
               href="/menu"
               className="border-2 border-blue-400/50 hover:border-blue-400 text-white font-black px-8 py-4 rounded-full transition-colors uppercase tracking-wider text-sm"

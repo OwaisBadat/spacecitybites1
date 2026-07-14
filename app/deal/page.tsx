@@ -28,7 +28,7 @@ export default function DealPage() {
         alt=""
         fill
         className="object-cover opacity-40"
-        style={{ objectPosition: "center 60%" }}
+        style={{ objectPosition: "center 85%" }}
         aria-hidden="true"
       />
       <div className="absolute inset-0 bg-black/40 pointer-events-none" />

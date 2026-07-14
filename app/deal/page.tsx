@@ -27,10 +27,11 @@ export default function DealPage() {
         src="/Poster1.PNG"
         alt=""
         fill
-        className="object-cover object-center opacity-15"
+        className="object-cover opacity-[0.07]"
+        style={{ objectPosition: "center 60%" }}
         aria-hidden="true"
       />
-      <div className="absolute inset-0 bg-black/60 pointer-events-none" />
+      <div className="absolute inset-0 bg-black/40 pointer-events-none" />
       <p className="relative z-10 text-neutral-400 text-[11px] uppercase tracking-widest font-semibold">Today&apos;s Deal · Space City Bites</p>
 
       {/* Story card */}

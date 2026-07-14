@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 const deals = [
   { day: "Sunday",    emoji: "🥪", name: "Breakfast Sandwich $5.99",  detail: "All day long",                     sub: "Brioche or butter croissant" },
@@ -25,14 +26,20 @@ export default function DealPage() {
 
       {/* Story card */}
       <div
-        className="relative w-full max-w-[390px] rounded-3xl overflow-hidden shadow-2xl"
-        style={{ aspectRatio: "9/16", background: "linear-gradient(160deg, #1a0a0a 0%, #1c1c2e 50%, #0a1a2e 100%)" }}
+        className="relative w-full max-w-[390px] rounded-3xl overflow-hidden shadow-2xl bg-black"
+        style={{ aspectRatio: "9/16" }}
       >
-        {/* Background glows — brighter */}
+        {/* Skyline background */}
+        <Image
+          src="/Poster1.PNG"
+          alt=""
+          fill
+          className="object-cover object-top opacity-40"
+          aria-hidden="true"
+        />
+        {/* Dark gradient overlay so text stays readable */}
         <div className="absolute inset-0 pointer-events-none"
-          style={{
-            background: "radial-gradient(ellipse 80% 60% at 50% 40%, rgba(227,30,36,0.35) 0%, transparent 65%), radial-gradient(ellipse 60% 40% at 85% 15%, rgba(29,143,232,0.25) 0%, transparent 60%), radial-gradient(ellipse 50% 35% at 15% 85%, rgba(29,143,232,0.15) 0%, transparent 60%)"
-          }} />
+          style={{ background: "linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.55) 40%, rgba(0,0,0,0.75) 100%)" }} />
 
         <div className="relative z-10 h-full flex flex-col items-center justify-between p-10">
 

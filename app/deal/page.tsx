@@ -27,7 +27,7 @@ export default function DealPage() {
         src="/Poster1.PNG"
         alt=""
         fill
-        className="object-cover opacity-[0.07]"
+        className="object-cover opacity-40"
         style={{ objectPosition: "center 60%" }}
         aria-hidden="true"
       />

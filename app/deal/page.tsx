@@ -21,25 +21,26 @@ export default function DealPage() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-neutral-900 flex flex-col items-center justify-center px-4 py-12 gap-6">
-      <p className="text-neutral-400 text-[11px] uppercase tracking-widest font-semibold">Today&apos;s Deal · Space City Bites</p>
+    <div className="relative min-h-screen flex flex-col items-center justify-center px-4 py-12 gap-6 bg-black overflow-hidden">
+      {/* Page background — Poster1 skyline */}
+      <Image
+        src="/Poster1.PNG"
+        alt=""
+        fill
+        className="object-cover object-center opacity-15"
+        aria-hidden="true"
+      />
+      <div className="absolute inset-0 bg-black/60 pointer-events-none" />
+      <p className="relative z-10 text-neutral-400 text-[11px] uppercase tracking-widest font-semibold">Today&apos;s Deal · Space City Bites</p>
 
       {/* Story card */}
       <div
-        className="relative w-full max-w-[390px] rounded-3xl overflow-hidden shadow-2xl bg-black"
-        style={{ aspectRatio: "9/16" }}
+        className="relative z-10 w-full max-w-[390px] rounded-3xl overflow-hidden shadow-2xl"
+        style={{ aspectRatio: "9/16", background: "linear-gradient(160deg, #1a0a0a 0%, #1c1c2e 50%, #0a1a2e 100%)" }}
       >
-        {/* Skyline background */}
-        <Image
-          src="/Poster1.PNG"
-          alt=""
-          fill
-          className="object-cover object-top opacity-40"
-          aria-hidden="true"
-        />
-        {/* Dark gradient overlay so text stays readable */}
+        {/* Glows */}
         <div className="absolute inset-0 pointer-events-none"
-          style={{ background: "linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.55) 40%, rgba(0,0,0,0.75) 100%)" }} />
+          style={{ background: "radial-gradient(ellipse 80% 60% at 50% 40%, rgba(227,30,36,0.35) 0%, transparent 65%), radial-gradient(ellipse 60% 40% at 85% 15%, rgba(29,143,232,0.25) 0%, transparent 60%)" }} />
 
         <div className="relative z-10 h-full flex flex-col items-center justify-between p-10">
 
@@ -86,7 +87,7 @@ export default function DealPage() {
         </div>
       </div>
 
-      <p className="text-neutral-500 text-xs text-center">
+      <p className="relative z-10 text-neutral-400 text-xs text-center">
         New deal every day · Open until {deal.day === "Friday" || deal.day === "Saturday" ? "2am" : deal.day === "Sunday" ? "9pm" : "12am"}
       </p>
     </div>

@@ -9,7 +9,7 @@ const featured = [
   { name: "12 Bone-In Wings", desc: "Pick 2 flavors from 50 options", price: "$18.99", tag: "Best Seller", img: "/Iceman Wings.PNG" },
   { name: "Iceman Burger", desc: "Two hot beef patties, cheese, beef bacon, egg", price: "$15.99", tag: "Fan Fav", img: "/Iceman Burger.PNG" },
   { name: "Iceman Hot Dog", desc: "Marinated beef hot dog loaded your way", price: "$9.99", tag: "Must Try", img: "/Iceman HotDog.PNG" },
-  { name: "Biscoff Pudding", desc: "Decadent, creamy, luscious", price: "$3.97", tag: "Popular", img: "/Biscoff Pudding.jpg" },
+  { name: "Biscoff Pudding", desc: "Decadent, creamy, luscious", price: "$3.97", tag: "Popular", img: "/biscoff pudding.jpeg" },
 ];
 
 export default function Home() {

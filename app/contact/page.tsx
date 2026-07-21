@@ -48,14 +48,24 @@ export default function ContactPage() {
         </div>
         <div>
           <h2 className="text-xs uppercase tracking-widest text-red-500 mb-3">Follow Us</h2>
-          <a
-            href="https://instagram.com/space_city_bites"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block text-neutral-200 hover:text-white transition-colors"
-          >
-            Instagram: @space_city_bites
-          </a>
+          <div className="space-y-2">
+            <a
+              href="https://instagram.com/space_city_bites"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block text-neutral-200 hover:text-white transition-colors"
+            >
+              Instagram: @space_city_bites
+            </a>
+            <a
+              href="https://www.tiktok.com/@spacecitybites"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block text-neutral-200 hover:text-white transition-colors"
+            >
+              TikTok: @spacecitybites
+            </a>
+          </div>
         </div>
       </div>
 

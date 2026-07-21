@@ -68,11 +68,6 @@ const jsonLd = {
   servesCuisine: ["Halal", "American", "Street Food", "Wings"],
   priceRange: "$",
   hasMenu: "https://www.spacecitybiteshtx.com/menu",
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.8",
-    reviewCount: "50",
-  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

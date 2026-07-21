@@ -5,6 +5,7 @@ import OrderButton from "@/components/OrderButton";
 export const metadata = {
   title: "Menu",
   description: "Space City Bites full menu — 50 wing flavors, halal street food, Houston TX.",
+  alternates: { canonical: "/menu" },
 };
 
 const flavors = [

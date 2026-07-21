@@ -4,6 +4,7 @@ import OrderButton from "@/components/OrderButton";
 export const metadata = {
   title: "About",
   description: "The story behind Space City Bites — 100% Halal street food born in Houston, TX.",
+  alternates: { canonical: "/about" },
 };
 
 export default function AboutPage() {

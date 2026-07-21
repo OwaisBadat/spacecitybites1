@@ -5,6 +5,10 @@ import ReviewsStrip from "@/components/ReviewsStrip";
 import InstagramFeed from "@/components/InstagramFeed";
 import OrderButton from "@/components/OrderButton";
 
+export const metadata = {
+  alternates: { canonical: "/" },
+};
+
 const featured = [
   { name: "12 Bone-In Wings", desc: "Pick 2 flavors from 50 options", price: "$18.99", tag: "Best Seller", img: "/Iceman Wings.PNG" },
   { name: "Iceman Burger", desc: "Two hot beef patties, cheese, beef bacon, egg", price: "$15.99", tag: "Fan Fav", img: "/Iceman Burger.PNG" },

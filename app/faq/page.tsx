@@ -3,6 +3,7 @@ import Image from "next/image";
 export const metadata = {
   title: "FAQ",
   description: "Frequently asked questions about Space City Bites — halal, hours, delivery, ordering, and more.",
+  alternates: { canonical: "/faq" },
 };
 
 const faqs = [

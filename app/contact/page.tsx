@@ -1,6 +1,7 @@
 export const metadata = {
   title: "Find Us",
   description: "Visit Space City Bites at 3729 W Alabama St Unit C, Houston TX 77027. Call (713) 621-3128.",
+  alternates: { canonical: "/contact" },
 };
 
 export default function ContactPage() {

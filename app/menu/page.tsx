@@ -62,73 +62,71 @@ const flavors = [
 
 const menu = [
   {
-    category: "Breakfast Served All Day",
+    category: "Combos",
     items: [
-      {
-        name: "Breakfast Sandwich",
-        description: "Choice of brioche bun or butter croissant topped with fluffy eggs, crispy beef bacon and cheddar cheese.",
-        price: "$7.97",
-        popular: false,
-      },
+      { name: "5 Pc Boneless Combo", description: "5 boneless wings, fries and a drink.", price: "$10.98", popular: false },
+      { name: "6 Pc Wings Combo", description: "6 bone-in wings, fries and a drink.", price: "$12.98", popular: true },
+      { name: "Hot Dog Combo", description: "Hot dog served with fries and a drink.", price: "$11.98", popular: false },
+      { name: "Burger Combo", description: "Double patty burger served with fries and a drink.", price: "$14.98", popular: true },
     ],
   },
   {
     category: "Fan Fav's",
     items: [
-      { name: "Hot Dog", description: "Tender marinated beef hot dog. Served how you like it.", price: "$9.99", popular: true },
-      { name: "Burger", description: "Two hot beef patties. Served how you like it.", price: "$4.99", popular: false },
-      { name: "Buffalo Chicken Loaded Fries", description: "Crispy fries loaded with buffalo chicken, nacho cheese, ranch or blue cheese drizzle.", price: "$8.00+", popular: false },
-      { name: "Chili Cheese Fries", description: "Crispy golden fries smothered in rich house-made beef chili and warm melted cheese.", price: "$4.50", popular: false },
-      { name: "Street Taco", description: "Tender marinated beef skirt steak, fresh cilantro and onions, house-made salsa verde.", price: "$2.50", popular: true },
-      { name: "Nachos", description: "Crispy tortilla chips loaded with seasoned ground beef, melted cheese, and sliced jalapeños.", price: "$6.99", popular: false },
+      { name: "Hot Dog", description: "1/4 lb all beef hot dog. Served how you like it.", price: "$9.99", popular: true },
+      { name: "Burger", description: "Two 4oz beef patties. Served how you like it.", price: "$12.99", popular: false },
+      { name: "Buffalo Chicken Loaded Fries", description: "Crispy fries loaded with buffalo chicken and nacho cheese, ranch or blue cheese drizzle.", price: "$13.99", popular: false },
+      { name: "Chili Cheese Fries", description: "Crispy golden fries smothered in rich house-made beef chili and warm melted cheese.", price: "$10.99", popular: false },
+      { name: "Street Taco", description: "Tender marinated beef skirt steak, fresh cilantro and onions, house-made salsa verde on the side.", price: "$3.50", popular: true },
+      { name: "Breakfast Sandwich", description: "Brioche bun or butter croissant, fluffy eggs, crispy beef bacon and cheddar. Add a smash patty if you like.", price: "$7.99", popular: false },
     ],
   },
   {
     category: "Traditional Bone-In Wings",
     items: [
-      { name: "6 Bone-In Wings", description: "Choose 1 flavor.", price: "$4.20", popular: false },
-      { name: "12 Bone-In Wings", description: "Choose up to 2 flavors.", price: "$24.70", popular: true },
-      { name: "24 Bone-In Wings", description: "Choose up to 2 flavors.", price: "$20.00+", popular: false },
+      { name: "6 Bone-In Wings", description: "Choose 1 flavor.", price: "$10.99", popular: false },
+      { name: "12 Bone-In Wings", description: "Choose up to 2 flavors.", price: "$18.99", popular: true },
+      { name: "24 Bone-In Wings", description: "Choose up to 3 flavors.", price: "$39.99", popular: false },
     ],
   },
   {
     category: "Boneless Wings",
     items: [
-      { name: "Boneless 5 Pc", description: "Choose 1 flavor.", price: "$6.05", popular: true },
-      { name: "Boneless 10 Pc", description: "Choose 1 flavor.", price: "$10.85", popular: false },
-      { name: "Boneless 20 Pc", description: "Choose up to 2 flavors.", price: "$16.50", popular: false },
+      { name: "Boneless 5 Pc", description: "Choose 1 flavor.", price: "$8.99", popular: true },
+      { name: "Boneless 10 Pc", description: "Choose 1 flavor.", price: "$15.99", popular: false },
+      { name: "Boneless 20 Pc", description: "Choose up to 2 flavors.", price: "$31.99", popular: false },
     ],
   },
   {
     category: "Sides",
     items: [
-      { name: "French Fries", description: "", price: "$3.97", popular: false },
-      { name: "Onion Rings", description: "", price: "$4.97", popular: false },
-      { name: "Mozzarella Sticks (3 Pc)", description: "", price: "$4.99", popular: true },
-      { name: "Mozzarella Sticks (6 Pc)", description: "", price: "$9.00+", popular: false },
+      { name: "French Fries", description: "", price: "$2.99", popular: false },
+      { name: "Onion Rings", description: "", price: "$3.99", popular: false },
+      { name: "Mozzarella Sticks (3 Pc)", description: "", price: "$3.99", popular: true },
+      { name: "Mozzarella Sticks (6 Pc)", description: "", price: "$6.99", popular: false },
     ],
   },
   {
     category: "Desserts",
     items: [
-      { name: "Banana Pudding", description: "Cold, creamy, delicious.", price: "$4.97", popular: false },
-      { name: "Biscoff Pudding", description: "Dip, bite — decadent, creamy and luscious.", price: "$3.97", popular: true },
+      { name: "Banana Pudding", description: "Cool, creamy, delicious.", price: "$4.97", popular: false },
+      { name: "Biscoff Pudding", description: "Our take — decadent, creamy and luscious.", price: "$3.97", popular: true },
     ],
   },
   {
     category: "Beverages",
     items: [
-      { name: "Joe's Tea / Juice", description: "", price: "$4.97", popular: true },
-      { name: "Can of Soda", description: "", price: "$2.97+", popular: false },
-      { name: "Water", description: "", price: "$0.97", popular: false },
+      { name: "Joe's Tea / Juice", description: "", price: "$3.99", popular: true },
+      { name: "Can of Soda", description: "", price: "$1.99", popular: false },
+      { name: "Water", description: "", price: "$1.00", popular: false },
     ],
   },
   {
     category: "Extras",
     items: [
-      { name: "Extra Blue Cheese", description: "", price: "$0.97", popular: false },
-      { name: "Extra Ranch", description: "", price: "$0.97", popular: false },
-      { name: "Extra Marinara Sauce", description: "", price: "$0.97", popular: false },
+      { name: "Extra Blue Cheese", description: "", price: "$0.87", popular: false },
+      { name: "Extra Ranch", description: "", price: "$0.87", popular: false },
+      { name: "Extra Marinara Sauce", description: "", price: "$0.87", popular: false },
     ],
   },
 ];

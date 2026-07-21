@@ -19,7 +19,7 @@ const securityHeaders = [
       "font-src 'self' https://fonts.gstatic.com",
       "connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://www.facebook.com https://analytics.tiktok.com https://behold.so https://w.behold.so https://feeds.behold.so",
       "img-src 'self' data: blob: https://www.google-analytics.com https://www.facebook.com https://www.googletagmanager.com https://raw.githubusercontent.com https://behold.so https://*.behold.so https://cdninstagram.com https://*.cdninstagram.com https://*.fbcdn.net",
-      "frame-src 'self' https://www.google.com https://www.tiktok.com https://www.instagram.com",
+      "frame-src 'self' https://www.google.com https://maps.google.com https://www.tiktok.com https://www.instagram.com",
     ].join("; "),
   },
 ];

@@ -62,7 +62,7 @@ export default function ContactPage() {
       <div className="rounded-xl overflow-hidden h-72 border border-neutral-800">
         <iframe
           title="Space City Bites location"
-          src="https://maps.google.com/maps?q=3729+W+Alabama+St+Unit+C,Houston,TX+77027&output=embed"
+          src="https://www.google.com/maps?q=3729+W+Alabama+St+Unit+C,Houston,TX+77027&output=embed"
           className="w-full h-full"
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"

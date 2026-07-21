@@ -18,19 +18,19 @@ export const metadata: Metadata = {
   description:
     "Space City Bites — 100% Halal street food in Houston, TX. 50 wing flavors, burgers, tacos, loaded fries and more. Big Cravings. Bigger Bites.",
   keywords: ["halal Houston", "Space City Bites", "halal wings Houston", "Houston street food", "halal restaurant Houston"],
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://spacecitybites.com"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://www.spacecitybiteshtx.com"),
   openGraph: {
     type: "website",
     siteName: "Space City Bites",
     title: "Space City Bites | Halal Street Food Houston",
     description: "100% Halal. Big Cravings. Bigger Bites. 50 wing flavors.",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/Poster1.PNG" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Space City Bites | Halal Street Food Houston",
     description: "100% Halal. Big Cravings. Bigger Bites. 50 wing flavors.",
-    images: ["/og-image.jpg"],
+    images: ["/Poster1.PNG"],
   },
   robots: { index: true, follow: true },
 };
@@ -40,7 +40,7 @@ const jsonLd = {
   "@type": "Restaurant",
   name: "Space City Bites",
   image: "https://raw.githubusercontent.com/OwaisBadat/spacecitybites1/3cb7bdd8e5f9852e037f839bf6740eafae7a6894/Circle%20Logo.PNG",
-  url: "https://spacecitybites.com",
+  url: "https://www.spacecitybiteshtx.com",
   telephone: "+17136213128",
   address: {
     "@type": "PostalAddress",
@@ -62,7 +62,7 @@ const jsonLd = {
   ],
   servesCuisine: ["Halal", "American", "Street Food", "Wings"],
   priceRange: "$",
-  hasMenu: "https://spacecitybites.com/menu",
+  hasMenu: "https://www.spacecitybiteshtx.com/menu",
   aggregateRating: {
     "@type": "AggregateRating",
     ratingValue: "4.8",

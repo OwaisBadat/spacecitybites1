@@ -24,13 +24,13 @@ export const metadata: Metadata = {
     siteName: "Space City Bites",
     title: "Space City Bites | Halal Street Food Houston",
     description: "100% Halal. Big Cravings. Bigger Bites. 50 wing flavors.",
-    images: [{ url: "/Poster1.PNG" }],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Space City Bites | Halal Street Food Houston",
     description: "100% Halal. Big Cravings. Bigger Bites. 50 wing flavors.",
-    images: ["/Poster1.PNG"],
+    images: ["/og-image.jpg"],
   },
   robots: { index: true, follow: true },
 };

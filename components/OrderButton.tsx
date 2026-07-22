@@ -1,6 +1,6 @@
 "use client";
 
-import { track } from "@vercel/analytics";
+import { reportOrderClick } from "@/lib/analytics";
 
 interface OrderButtonProps {
   location: string;
@@ -15,7 +15,7 @@ export default function OrderButton({ location, className, children }: OrderButt
       target="_blank"
       rel="noopener noreferrer"
       className={className}
-      onClick={() => track("order_click", { location })}
+      onClick={() => reportOrderClick(location)}
     >
       {children}
     </a>

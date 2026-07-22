@@ -5,7 +5,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import OpenStatus from "@/components/OpenStatus";
-import { track } from "@vercel/analytics";
+import { reportOrderClick } from "@/lib/analytics";
 
 const links = [
   { href: "/", label: "Home" },
@@ -56,7 +56,7 @@ export default function Nav() {
             target="_blank"
             rel="noopener noreferrer"
             className="bg-red-600 hover:bg-red-500 text-white text-xs font-black uppercase tracking-wider px-4 py-2 rounded-full transition-colors"
-            onClick={() => track("order_click", { location: "nav" })}
+            onClick={() => reportOrderClick("nav")}
           >
             Order Now
           </a>
@@ -100,7 +100,7 @@ export default function Nav() {
               href="https://wings-87-alabama-street-houston.cloveronline.com"
               target="_blank"
               rel="noopener noreferrer"
-              onClick={() => { setOpen(false); track("order_click", { location: "mobile_nav" }); }}
+              onClick={() => { setOpen(false); reportOrderClick("mobile_nav"); }}
               className="flex-[2] bg-red-600 text-white text-center font-black uppercase tracking-wider px-4 py-4 rounded-full"
             >
               🛒 Order Now

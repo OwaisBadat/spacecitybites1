@@ -1,6 +1,7 @@
 "use client";
 
 import { track } from "@vercel/analytics";
+import { reportOrderClick } from "@/lib/analytics";
 
 export default function FloatingOrder() {
   return (
@@ -17,7 +18,7 @@ export default function FloatingOrder() {
         target="_blank"
         rel="noopener noreferrer"
         className="flex-[2] bg-red-600 text-white text-center font-black uppercase tracking-wider py-4 rounded-full text-sm shadow-xl shadow-red-900/40"
-        onClick={() => track("order_click", { location: "floating_bar" })}
+        onClick={() => reportOrderClick("floating_bar")}
       >
         🛒 Order Now
       </a>

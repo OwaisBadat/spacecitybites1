@@ -114,6 +114,17 @@ _(Re-check these saved — they may have been lost in a rebuild. Add via Assets 
 recipe · recipes · jobs · hiring · grocery · frozen · costco · butcher · halal meat · how to make
 ```
 
+### Ad schedule (Central Time — matches open hours + 1hr lead-in + late-night)
+Set at: Campaign → Audiences, keywords & content → Ad schedule.
+```
+Mon–Fri     11:00 AM – 12:00 AM
+Saturday    12:00 AM – 2:00 AM   (Fri-night spillover)
+Saturday    11:00 AM – 12:00 AM
+Sunday      12:00 AM – 2:00 AM   (Sat-night spillover)
+Sunday      11:00 AM – 9:00 PM
+```
+Revisit in ~2 weeks using the Day & hour report to daypart on real data.
+
 ---
 
 ## 4. Performance Max — "New Deal Every Day"

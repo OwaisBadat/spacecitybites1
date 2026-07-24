@@ -174,7 +174,27 @@ Google's Recommendations tab is a sales tool. On a lean budget, decline almost a
 
 ---
 
-## 7. Google Business Profile & reviews
+## 7. Social media links (Instagram / TikTok Stories)
+
+Match the link to the content; prefer site links (measurable) over Clover-direct.
+
+| Story content | Link |
+|---|---|
+| Today's deal | `/deal` (auto-updates, screenshot-friendly, Order Now → Clover) |
+| Menu / flavor showcase | `/menu` |
+| Pure "order now" impulse | Clover direct (fewest taps) |
+| Permanent bio link | `/menu` (hub) |
+
+**Pro tip — track social traffic with UTM tags** so you can see in Vercel/GA4 how
+many visits + Order Now clicks come from each channel:
+```
+https://www.spacecitybiteshtx.com/deal?utm_source=instagram&utm_medium=story
+https://www.spacecitybiteshtx.com/deal?utm_source=tiktok&utm_medium=bio
+```
+
+---
+
+## 8. Google Business Profile & reviews
 
 GBP often out-earns paid ads for a local restaurant. Keep it strong.
 
@@ -190,7 +210,7 @@ GBP often out-earns paid ads for a local restaurant. Keep it strong.
 
 ---
 
-## 8. Key links & IDs
+## 9. Key links & IDs
 
 | Item | Value |
 |---|---|

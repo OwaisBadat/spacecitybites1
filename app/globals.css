@@ -11,10 +11,10 @@ body {
 /* Promo banner brand glow (red + electric blue) */
 @keyframes promoGlow {
   0%, 100% {
-    box-shadow: 0 0 16px rgba(227,30,36,0.55), 0 0 38px rgba(227,30,36,0.30), 0 3px 26px rgba(29,143,232,0.38);
+    box-shadow: 0 0 24px rgba(227,30,36,0.75), 0 0 55px rgba(227,30,36,0.45), 0 4px 40px rgba(29,143,232,0.55);
   }
   50% {
-    box-shadow: 0 0 26px rgba(227,30,36,0.85), 0 0 60px rgba(227,30,36,0.45), 0 3px 40px rgba(29,143,232,0.60);
+    box-shadow: 0 0 40px rgba(227,30,36,1), 0 0 90px rgba(227,30,36,0.65), 0 4px 60px rgba(29,143,232,0.85);
   }
 }
 .promo-glow { animation: promoGlow 2.6s ease-in-out infinite; }

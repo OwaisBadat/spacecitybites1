@@ -11,6 +11,7 @@ const promoDeal = {
   name: PROMO.name,
   detail: PROMO.detail,
   sub: PROMO.sub,
+  img: "/Iceman Wings.PNG",
 };
 
 const deals = [
@@ -24,7 +25,7 @@ const deals = [
 ];
 
 export default function DealPage() {
-  const [deal, setDeal] = useState(deals[0]);
+  const [deal, setDeal] = useState<(typeof deals)[number] & { img?: string }>(deals[0]);
 
   useEffect(() => {
     // During the weekend special, show it instead of the normal daily deal.
@@ -72,9 +73,18 @@ export default function DealPage() {
 
           {/* Middle */}
           <div className="text-center flex flex-col items-center gap-4 flex-1 justify-center">
-            <div className="text-8xl leading-none" style={{ filter: "drop-shadow(0 0 32px rgba(227,30,36,0.7))" }}>
-              {deal.emoji}
-            </div>
+            {deal.img ? (
+              <div
+                className="relative w-36 h-36 rounded-full overflow-hidden border-[3px] border-white/15"
+                style={{ boxShadow: "0 0 34px rgba(227,30,36,0.6), 0 8px 24px rgba(0,0,0,0.6)" }}
+              >
+                <Image src={deal.img} alt={deal.name} fill className="object-cover" />
+              </div>
+            ) : (
+              <div className="text-8xl leading-none" style={{ filter: "drop-shadow(0 0 32px rgba(227,30,36,0.7))" }}>
+                {deal.emoji}
+              </div>
+            )}
             <h1 className="text-4xl sm:text-5xl font-black uppercase leading-none tracking-tight text-white text-balance">
               {deal.name}
             </h1>

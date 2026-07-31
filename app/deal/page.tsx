@@ -3,6 +3,15 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { reportOrderClick } from "@/lib/analytics";
+import { PROMO, isPromoActive } from "@/lib/promo";
+
+const promoDeal = {
+  day: "This Weekend",
+  emoji: PROMO.emoji,
+  name: PROMO.name,
+  detail: PROMO.detail,
+  sub: PROMO.sub,
+};
 
 const deals = [
   { day: "Sunday",    emoji: "🥪", name: "Breakfast Sandwich $5.99",  detail: "All day long",                     sub: "Brioche or butter croissant" },
@@ -18,7 +27,9 @@ export default function DealPage() {
   const [deal, setDeal] = useState(deals[0]);
 
   useEffect(() => {
-    setDeal(deals[new Date().getDay()]);
+    // During the weekend special, show it instead of the normal daily deal.
+    // Auto-reverts once the promo expires (Sun 8/2 9pm Central).
+    setDeal(isPromoActive() ? promoDeal : deals[new Date().getDay()]);
   }, []);
 
   return (

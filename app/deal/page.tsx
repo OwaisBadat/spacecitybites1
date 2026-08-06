@@ -6,7 +6,7 @@ import { reportOrderClick } from "@/lib/analytics";
 import { PROMO, isPromoActive } from "@/lib/promo";
 
 const promoDeal = {
-  day: "This Weekend",
+  day: "All August",
   emoji: PROMO.emoji,
   name: PROMO.name,
   detail: PROMO.detail,

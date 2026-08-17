@@ -38,8 +38,8 @@ export default function AboutPage() {
         </p>
         <p>
           Houston deserved a wing spot with real flavor — not just a handful of sauces, but a full lineup.
-          We built a menu of <strong className="text-white">50 flavors</strong>, from classic Buffalo to Garlic
-          Mango Habanero to Caribbean Jerk, because why limit yourself?
+          We built a menu of <strong className="text-white">20+ flavors</strong>, from classic Buffalo to Mango
+          Habanero to Caribbean Jerk, because why limit yourself?
         </p>
         <p>
           Everything we serve is <strong className="text-white">100% Halal certified</strong>. That&apos;s not
@@ -54,7 +54,7 @@ export default function AboutPage() {
       <div className="mt-12 grid grid-cols-2 gap-4">
         {[
           { label: "100%", sub: "Halal Certified" },
-          { label: "50", sub: "Wing Flavors" },
+          { label: "20+", sub: "Wing Flavors" },
           { label: "7", sub: "Daily Deals" },
           { label: "Late", sub: "Open Until 2am Fri & Sat" },
         ].map(({ label, sub }) => (

@@ -9,12 +9,12 @@ const CATEGORIES: Record<string, (name: string) => boolean> = {
   Buffalo: (n) => n.toLowerCase().includes("buffalo"),
   BBQ: (n) => n.toLowerCase().includes("bbq"),
   Teriyaki: (n) => n.toLowerCase().includes("teriyaki"),
-  Sriracha: (n) => n.toLowerCase().includes("sriracha"),
-  Chipotle: (n) => n.toLowerCase().includes("chipotle"),
   "Lemon Pepper": (n) => n.toLowerCase().includes("lemon pepper"),
   Honey: (n) => n.toLowerCase().includes("honey"),
-  "Dry Rub": (n) => n.toLowerCase().includes("dry rub"),
+  Garlic: (n) => n.toLowerCase().includes("garlic"),
+  Cajun: (n) => n.toLowerCase().includes("cajun"),
   Jerk: (n) => n.toLowerCase().includes("jerk"),
+  "Dry Rub": (n) => n.toLowerCase().includes("dry rub"),
 };
 
 export default function FlavorPicker({ flavors }: { flavors: Flavor[] }) {
@@ -30,7 +30,7 @@ export default function FlavorPicker({ flavors }: { flavors: Flavor[] }) {
   return (
     <section>
       <h2 className="text-3xl font-black uppercase tracking-tight mb-2">Choose Your Flavor</h2>
-      <p className="text-neutral-400 text-sm mb-6">50 flavors. Wet sauces & dry rubs. Mix and match up to 2.</p>
+      <p className="text-neutral-400 text-sm mb-6">20+ flavors. Wet sauces & dry rubs. Mix and match up to 2.</p>
 
       {/* Search */}
       <input

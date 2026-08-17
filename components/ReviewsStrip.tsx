@@ -1,5 +1,5 @@
 const reviews = [
-  { text: "Best wings in Houston, period. 50 flavors and every one slaps. I've been back 4 times this month alone.", author: "Ahmad K." },
+  { text: "Best wings in Houston, period. So many flavors and every one slaps. I've been back 4 times this month alone.", author: "Ahmad K." },
   { text: "Halal, fresh, and open late. This spot is everything. The buffalo wings are unreal and the staff always hooks it up.", author: "Mariam S." },
   { text: "Street tacos for $2.50?? Unreal. I come every week. Best kept secret in Houston — not for long though!", author: "Carlos R." },
 ];

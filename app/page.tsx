@@ -10,9 +10,9 @@ export const metadata = {
 };
 
 const featured = [
-  { name: "12 Bone-In Wings", desc: "Pick 2 flavors from 50 options", price: "$18.99", tag: "Best Seller", img: "/Iceman Wings.PNG" },
-  { name: "Iceman Burger", desc: "Two hot beef patties, cheese, beef bacon, egg", price: "$15.99", tag: "Fan Fav", img: "/Iceman Burger.PNG" },
-  { name: "Iceman Hot Dog", desc: "Marinated beef hot dog loaded your way", price: "$9.99", tag: "Must Try", img: "/Iceman HotDog.PNG" },
+  { name: "12 Bone-In Wings", desc: "Pick 2 flavors from 20+ options", price: "$18.99", tag: "Best Seller", img: "/Iceman Wings.PNG" },
+  { name: "Jalapeño Blast Burger", desc: "4oz beef, jalapeño ranch, pepper jack, crispy onions", price: "$13.99", tag: "Fan Fav", img: "/Iceman Burger.PNG" },
+  { name: "Gordo's Dog", desc: "Beef hot link, cream cheese, jalapeño ranch, crispy onions", price: "$11.99", tag: "Must Try", img: "/Iceman HotDog.PNG" },
   { name: "Biscoff Pudding", desc: "Decadent, creamy, luscious", price: "$3.97", tag: "Popular", img: "/biscoff pudding.jpeg" },
 ];
 
@@ -40,7 +40,7 @@ export default function Home() {
             <span className="text-red-500">BITES</span>
           </h1>
           <p className="text-lg sm:text-xl text-white font-bold mt-4 mb-1">Big Cravings. Bigger Bites.</p>
-          <p className="text-blue-200/70 mb-8 text-sm">50 Wing Flavors · Halal Street Food · Open Late</p>
+          <p className="text-blue-200/70 mb-8 text-sm">20+ Wing Flavors · Halal Street Food · Open Late</p>
           <div className="flex gap-3 flex-wrap justify-center">
             <OrderButton
               location="homepage_hero"

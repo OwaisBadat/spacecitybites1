@@ -21,7 +21,7 @@ const faqs = [
   },
   {
     q: "How many wing flavors do you have?",
-    a: "50 flavors — wet sauces and dry rubs. From classic Buffalo to Mango Habanero to Caribbean Jerk. You can pick up to 2 flavors per order.",
+    a: "20+ flavors — wet sauces and dry rubs. From classic Buffalo to Mango Habanero to Caribbean Jerk. You can pick up to 2 flavors per order.",
   },
   {
     q: "Where are you located?",

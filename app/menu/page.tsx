@@ -4,7 +4,7 @@ import OrderButton from "@/components/OrderButton";
 
 export const metadata = {
   title: "Menu",
-  description: "Space City Bites full menu — 50 wing flavors, halal street food, Houston TX.",
+  description: "Space City Bites full menu — 20+ wing flavors, burgers, hot dogs, tacos and more. Halal street food, Houston TX.",
   alternates: { canonical: "/menu" },
 };
 
@@ -12,99 +12,91 @@ const flavors = [
   { num: 1, name: "Buffalo" },
   { num: 2, name: "Buffalo 911" },
   { num: 3, name: "Buffalo Minced Garlic" },
-  { num: 4, name: "BBQ" },
-  { num: 5, name: "Spicy BBQ" },
-  { num: 6, name: "Hickory Smoked BBQ" },
-  { num: 7, name: "Honey Hot" },
-  { num: 8, name: "Honey Garlic" },
+  { num: 4, name: "Lemon Pepper Buffalo" },
+  { num: 5, name: "BBQ" },
+  { num: 6, name: "Spicy BBQ" },
+  { num: 7, name: "Honey BBQ" },
+  { num: 8, name: "Lemon Pepper BBQ" },
   { num: 9, name: "Teriyaki" },
-  { num: 10, name: "Spicy Teriyaki" },
+  { num: 10, name: "Teriyaki BBQ" },
   { num: 11, name: "Honey Teriyaki" },
-  { num: 12, name: "Spicy Honey Teriyaki" },
-  { num: 13, name: "Teriyaki BBQ" },
-  { num: 14, name: "Spicy Teriyaki BBQ" },
-  { num: 15, name: "Garlic Teriyaki" },
-  { num: 16, name: "Spicy Garlic Teriyaki" },
-  { num: 17, name: "Garlic Parmesan" },
-  { num: 18, name: "Spicy Garlic Parmesan" },
-  { num: 19, name: "Lemon Pepper Buffalo" },
-  { num: 20, name: "Lemon Pepper BBQ" },
-  { num: 21, name: "Spicy Honey Lemon Pepper" },
-  { num: 22, name: "Honey Lemon Pepper" },
-  { num: 23, name: "Sriracha Buffalo" },
-  { num: 24, name: "Sriracha BBQ" },
-  { num: 25, name: "Honey Sriracha" },
-  { num: 26, name: "Sriracha Chili" },
-  { num: 27, name: "Sriracha Garlic Chili" },
-  { num: 28, name: "Chipotle Buffalo" },
-  { num: 29, name: "Chipotle Garlic Buffalo" },
-  { num: 30, name: "Chipotle BBQ" },
-  { num: 31, name: "Honey Chipotle" },
-  { num: 32, name: "Soy Sauce" },
-  { num: 33, name: "Spicy Soy Sauce" },
-  { num: 34, name: "Garlic Soy Sauce" },
-  { num: 35, name: "Soy BBQ" },
-  { num: 36, name: "Spicy Soy BBQ" },
-  { num: 37, name: "Caribbean Jerk Wet" },
-  { num: 38, name: "Cajun Wet" },
-  { num: 39, name: "Mango Habanero" },
-  { num: 40, name: "Garlic Mango Habanero" },
-  { num: 41, name: "Sweet Chili" },
-  { num: 42, name: "Thai Chili" },
-  { num: 43, name: "Naked" },
-  { num: 44, name: "Salt & Pepper (Dry Rub)" },
-  { num: 45, name: "Hot (Dry Rub)" },
-  { num: 46, name: "Cajun (Dry Rub)" },
-  { num: 47, name: "Chipotle (Dry Rub)" },
-  { num: 48, name: "Sriracha (Dry Rub)" },
-  { num: 49, name: "Lemon Pepper (Dry Rub)" },
-  { num: 50, name: "Caribbean Jerk (Dry Rub)" },
+  { num: 12, name: "Honey Hot" },
+  { num: 13, name: "Honey Lemon Pepper" },
+  { num: 14, name: "Spicy Honey Lemon Pepper" },
+  { num: 15, name: "Garlic Parmesan" },
+  { num: 16, name: "Spicy Garlic Parmesan" },
+  { num: 17, name: "Caribbean Jerk Wet" },
+  { num: 18, name: "Cajun Wet" },
+  { num: 19, name: "Mango Habanero" },
+  { num: 20, name: "El Nino" },
+  { num: 21, name: "Naked" },
+  { num: 22, name: "Cajun (Dry Rub)" },
+  { num: 23, name: "Lemon Pepper (Dry Rub)" },
+  { num: 24, name: "Caribbean Jerk (Dry Rub)" },
 ];
 
 const menu = [
   {
     category: "Combos",
     items: [
-      { name: "5 Pc Boneless Combo", description: "5 boneless wings, fries and a drink.", price: "$10.98", popular: false },
-      { name: "6 Pc Wings Combo", description: "6 bone-in wings, fries and a drink.", price: "$12.98", popular: true },
-      { name: "Hot Dog Combo", description: "Hot dog served with fries and a drink.", price: "$11.98", popular: false },
-      { name: "Burger Combo", description: "Double patty burger served with fries and a drink.", price: "$14.98", popular: true },
+      { name: "6 Pc Bone-In Wing Combo", description: "Six crispy skin-on bone-in wings in your choice of flavor, served with fries and a drink.", price: "$12.99", popular: true },
+      { name: "12 Pc Bone-In Wing Combo", description: "A dozen bone-in wings across two flavors, with fries and a drink.", price: "$21.99", popular: false },
+      { name: "5 Pc Boneless Combo", description: "Five juicy boneless wings in one flavor, with fries and a drink.", price: "$10.99", popular: false },
+      { name: "10 Pc Boneless Combo", description: "Ten boneless wings across two flavors, with fries and a drink.", price: "$18.99", popular: false },
+      { name: "Classic Burger Combo", description: "Our Classic beef smash burger served with fries and a drink.", price: "$9.99", popular: true },
     ],
   },
   {
     category: "Fan Fav's",
     items: [
-      { name: "Hot Dog", description: "1/4 lb all beef hot dog. Served how you like it.", price: "$9.99", popular: true },
-      { name: "Burger", description: "Two 4oz beef patties. Served how you like it.", price: "$12.99", popular: false },
-      { name: "Buffalo Chicken Loaded Fries", description: "Crispy fries loaded with buffalo chicken and nacho cheese, ranch or blue cheese drizzle.", price: "$13.99", popular: false },
-      { name: "Chili Cheese Fries", description: "Crispy golden fries smothered in rich house-made beef chili and warm melted cheese.", price: "$10.99", popular: false },
-      { name: "Street Taco", description: "Tender marinated beef skirt steak, fresh cilantro and onions, house-made salsa verde on the side.", price: "$3.50", popular: true },
-      { name: "Breakfast Sandwich", description: "Brioche bun or butter croissant, fluffy eggs, crispy beef bacon and cheddar. Add a smash patty if you like.", price: "$7.99", popular: false },
+      { name: "The Cosmic Crispy", description: "A marinated chicken thigh fried to perfection and tossed in your choice of sauce, on a potato roll with spicy mayo. Cheese and pickles optional — add beef bacon if you dare.", price: "$11.99", popular: true },
+      { name: "Street Taco", description: "Tender marinated beef skirt steak topped with fresh cilantro and onions, served with house-made salsa verde on the side.", price: "$3.50", popular: true },
+      { name: "Buffalo Chicken Loaded Fries", description: "Crispy fries piled with boneless buffalo chicken and nacho cheese, finished with a ranch or blue cheese drizzle.", price: "$13.99", popular: false },
+      { name: "Chili Cheese Fries", description: "Crispy golden fries smothered in house-made beef chili and warm nacho cheese.", price: "$10.99", popular: false },
+      { name: "Breakfast Sandwich", description: "Fluffy egg omelette, crispy beef bacon and American cheese on a butter croissant or potato roll. Add a smash patty if you like.", price: "$7.99", popular: false },
+    ],
+  },
+  {
+    category: "Burgers",
+    items: [
+      { name: "The Classic Smash", description: "A juicy 4oz smashed beef patty with house burger sauce, grilled onions, pickles and American cheese on a soft potato roll.", price: "$6.99", popular: true },
+      { name: "BBQ Rodeo Burger", description: "4oz beef patty stacked with slow-simmered beef chili, a crispy onion ring, BBQ sauce, pickles and American cheese on a soft potato roll.", price: "$9.99", popular: false },
+      { name: "Jalapeño Blast Burger", description: "4oz beef patty with creamy jalapeño ranch, grilled jalapeños, melted pepper jack and crispy onions on a soft potato roll.", price: "$13.99", popular: false },
+    ],
+  },
+  {
+    category: "Hot Dogs",
+    items: [
+      { name: "Gordo's Dog", description: "A loaded beef hot link with whipped cream cheese, caramelized onions, jalapeño ranch, crispy onions and our special ketchup.", price: "$11.99", popular: true },
+      { name: "Chili Cheese Dog", description: "A beef hot link smothered in slow-simmered beef chili and warm nacho cheese.", price: "$9.99", popular: false },
+      { name: "Classic Dog", description: "A classic beef hot link on a soft potato bun — dressed just how you like it.", price: "$6.99", popular: false },
     ],
   },
   {
     category: "Traditional Bone-In Wings",
     items: [
-      { name: "6 Bone-In Wings", description: "Choose 1 flavor.", price: "$10.99", popular: false },
-      { name: "12 Bone-In Wings", description: "Choose up to 2 flavors.", price: "$18.99", popular: true },
-      { name: "24 Bone-In Wings", description: "Choose up to 3 flavors.", price: "$39.99", popular: false },
+      { name: "6 Bone-In Wings", description: "Six skin-on wings, double-fried crispy and tossed in your choice of flavor. Choose 1 flavor.", price: "$10.99", popular: false },
+      { name: "12 Bone-In Wings", description: "A dozen skin-on wings, double-fried and tossed to order. Choose up to 2 flavors.", price: "$18.99", popular: true },
+      { name: "24 Bone-In Wings", description: "Two dozen skin-on wings for the whole crew, tossed to order. Choose up to 3 flavors.", price: "$39.99", popular: false },
     ],
   },
   {
     category: "Boneless Wings",
     items: [
-      { name: "Boneless 5 Pc", description: "Choose 1 flavor.", price: "$8.99", popular: true },
-      { name: "Boneless 10 Pc", description: "Choose 1 flavor.", price: "$15.99", popular: false },
-      { name: "Boneless 20 Pc", description: "Choose up to 2 flavors.", price: "$31.99", popular: false },
+      { name: "5 Pc Boneless Wings", description: "Cubed all-white chicken breast, marinated 24 hours, hand-breaded and fried golden. Choose 1 flavor.", price: "$8.99", popular: true },
+      { name: "10 Pc Boneless Wings", description: "Ten hand-breaded, 24-hour marinated boneless wings fried to order. Choose up to 2 flavors.", price: "$15.99", popular: false },
+      { name: "20 Pc Boneless Wings", description: "Twenty boneless wings for sharing, hand-breaded and fried to order. Choose up to 2 flavors.", price: "$31.99", popular: false },
     ],
   },
   {
     category: "Sides",
     items: [
-      { name: "French Fries", description: "", price: "$2.99", popular: false },
-      { name: "Onion Rings", description: "", price: "$3.99", popular: false },
-      { name: "Mozzarella Sticks (3 Pc)", description: "", price: "$3.99", popular: true },
-      { name: "Mozzarella Sticks (6 Pc)", description: "", price: "$6.99", popular: false },
+      { name: "French Fries", description: "Crispy golden fries.", price: "$2.99", popular: false },
+      { name: "Large French Fries", description: "A generous basket of crispy golden fries.", price: "$4.99", popular: false },
+      { name: "Onion Rings", description: "Thick-cut, golden battered onion rings.", price: "$3.99", popular: false },
+      { name: "Large Onion Rings", description: "A generous basket of thick-cut battered onion rings.", price: "$5.99", popular: false },
+      { name: "Mozzarella Sticks (3 Pc)", description: "Golden fried mozzarella sticks served with marinara.", price: "$3.99", popular: true },
+      { name: "Mozzarella Sticks (6 Pc)", description: "Six golden fried mozzarella sticks served with marinara.", price: "$6.99", popular: false },
     ],
   },
   {
@@ -117,9 +109,9 @@ const menu = [
   {
     category: "Beverages",
     items: [
-      { name: "Joe's Tea / Juice", description: "", price: "$3.99", popular: true },
-      { name: "Can of Soda", description: "", price: "$1.99", popular: false },
-      { name: "Water", description: "", price: "$1.00", popular: false },
+      { name: "Joe's Tea", description: "Ice-cold Joe Tea — sweet and refreshing.", price: "$3.99", popular: true },
+      { name: "Can of Soda", description: "Your choice of ice-cold canned soda.", price: "$1.99", popular: false },
+      { name: "Bottled Water", description: "", price: "$1.00", popular: false },
     ],
   },
   {
@@ -191,7 +183,7 @@ export default function MenuPage() {
         ))}
       </div>
 
-      {/* 50 Flavors — interactive picker */}
+      {/* Wing flavors — interactive picker */}
       <FlavorPicker flavors={flavors} />
     </div>
     </div>

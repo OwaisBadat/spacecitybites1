@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { reportOrderClick } from "@/lib/analytics";
-import { PROMO, isPromoActive } from "@/lib/promo";
 
 const deals = [
   { day: "Sunday",    emoji: "🥪", name: "Breakfast Sandwich $5.99",  detail: "All day long",                     sub: "Brioche or butter croissant" },
@@ -63,11 +62,9 @@ function DealCard({ variant, badge, emoji, img, name, detail, sub }: CardProps) 
 
 export default function DealPage() {
   const [daily, setDaily] = useState(deals[0]);
-  const [showPromo, setShowPromo] = useState(false);
 
   useEffect(() => {
     setDaily(deals[new Date().getDay()]);
-    setShowPromo(isPromoActive());
   }, []);
 
   return (
@@ -87,11 +84,11 @@ export default function DealPage() {
         {/* Heading */}
         <div className="text-center">
           <p className="text-blue-300 text-[11px] font-bold uppercase tracking-[0.25em]">Space City Bites · Houston</p>
-          <h1 className="text-3xl sm:text-4xl font-black uppercase tracking-tight text-white mt-1.5">Today&apos;s Deals</h1>
+          <h1 className="text-3xl sm:text-4xl font-black uppercase tracking-tight text-white mt-1.5">Today&apos;s Deal</h1>
         </div>
 
-        {/* Cards */}
-        <div className={`w-full grid gap-4 ${showPromo ? "sm:grid-cols-2" : "max-w-sm"}`}>
+        {/* Card */}
+        <div className="w-full grid gap-4 max-w-sm">
           <DealCard
             variant="day"
             badge={`Today · ${daily.day}`}
@@ -100,16 +97,6 @@ export default function DealPage() {
             detail={daily.detail}
             sub={daily.sub}
           />
-          {showPromo && (
-            <DealCard
-              variant="special"
-              badge={`🔥 ${PROMO.badge}`}
-              img="/Iceman Wings.PNG"
-              name={PROMO.name}
-              detail="All month long"
-              sub="Bone-in or boneless"
-            />
-          )}
         </div>
 
         {/* One Order Now button */}

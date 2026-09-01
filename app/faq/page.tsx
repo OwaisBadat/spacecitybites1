@@ -36,12 +36,12 @@ const faqs = [
     a: "We have sides like French Fries, Onion Rings, and Mozzarella Sticks. Our menu is primarily meat-based — call us if you have specific dietary needs.",
   },
   {
-    q: "What is the Saturday Family Meal Deal?",
-    a: "Every Saturday: 24pc Bone-In Wings + Large Fries + 6pc Mozzarella Sticks for just $49. Perfect for feeding the whole crew.",
+    q: "What is the Saturday wings deal?",
+    a: "Every Saturday, order 24 wings and get a Large Fry free. Perfect for feeding the whole crew.",
   },
   {
     q: "Do you have daily specials?",
-    a: "Every day has a deal — half price hotdogs on Monday, Taco Tuesday, 99¢ wings on Wednesday, free fries on Friday, and more. Check our homepage for today's deal.",
+    a: "Every day has a deal — $4.99 hot dogs on Monday, 99¢ Tacos on Tuesday, 99¢ wings on Wednesday, $4.99 chicken sandwich on Thursday, $4.99 classic burger on Friday, a free large fry with 24 wings on Saturday, and a $4.99 breakfast sandwich on Sunday. Check our homepage for today's deal.",
   },
   {
     q: "Is there parking?",

@@ -1,13 +1,13 @@
 "use client";
 
 const deals = [
-  { day: "MON", deal: "Half Price Hotdogs", detail: "50% off all day", emoji: "🌭" },
-  { day: "TUE", deal: "Taco Tuesday", detail: "3 Tacos for $8 — save $2.50", emoji: "🌮" },
+  { day: "MON", deal: "$4.99 Hot Dog", detail: "Loaded your way — all day", emoji: "🌭" },
+  { day: "TUE", deal: "99¢ Tacos", detail: "Beef skirt steak street tacos", emoji: "🌮" },
   { day: "WED", deal: "99¢ Wings", detail: "Bone-in or boneless", emoji: "🍗" },
-  { day: "THU", deal: "Free 3pc Mozzie", detail: "With any burger purchase", emoji: "🧀" },
-  { day: "FRI", deal: "Free Fries", detail: "With any food purchase", emoji: "🍟" },
-  { day: "SAT", deal: "Family Meal Deal", detail: "24pc Bone-In + Large Fries + 6pc Mozz Sticks — $49", emoji: "👨‍👩‍👧‍👦" },
-  { day: "SUN", deal: "Breakfast Sandwich $5.99", detail: "All day long", emoji: "🥪" },
+  { day: "THU", deal: "$4.99 Chicken Sandwich", detail: "The Cosmic Crispy — fried thigh, spicy mayo", emoji: "🐔" },
+  { day: "FRI", deal: "$4.99 Classic Burger", detail: "The Classic Smash — all day", emoji: "🍔" },
+  { day: "SAT", deal: "Free Large Fry", detail: "With any 24pc wings order", emoji: "🍟" },
+  { day: "SUN", deal: "$4.99 Breakfast Sandwich", detail: "Egg, beef bacon & cheese — all day", emoji: "🥪" },
 ];
 
 export default function TodaysDeal() {

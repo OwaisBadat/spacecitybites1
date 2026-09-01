@@ -5,13 +5,13 @@ import Image from "next/image";
 import { reportOrderClick } from "@/lib/analytics";
 
 const deals = [
-  { day: "Sunday",    emoji: "🥪", name: "Breakfast Sandwich $5.99",  detail: "All day long",                     sub: "Brioche or butter croissant" },
-  { day: "Monday",    emoji: "🌭", name: "Half Price Hotdogs",         detail: "50% off all hotdogs",              sub: "All day long" },
-  { day: "Tuesday",   emoji: "🌮", name: "Taco Tuesday",               detail: "3 Tacos for $8",                   sub: "Save $2.50 — all day" },
+  { day: "Sunday",    emoji: "🥪", name: "$4.99 Breakfast Sandwich",   detail: "Egg, beef bacon & cheese",         sub: "All day Sunday" },
+  { day: "Monday",    emoji: "🌭", name: "$4.99 Hot Dog",              detail: "Loaded your way",                  sub: "All day Monday" },
+  { day: "Tuesday",   emoji: "🌮", name: "99¢ Tacos",                  detail: "Beef skirt steak street tacos",    sub: "Every Tuesday, all day" },
   { day: "Wednesday", emoji: "🍗", name: "99¢ Wings",                  detail: "Bone-in or boneless",              sub: "The best deal in Houston" },
-  { day: "Thursday",  emoji: "🧀", name: "Free 3pc Mozzie",            detail: "With any burger purchase",         sub: "Mozzarella sticks on us" },
-  { day: "Friday",    emoji: "🍟", name: "Free Fries",                 detail: "With any food purchase",           sub: "Every Friday, all day" },
-  { day: "Saturday",  emoji: "👨‍👩‍👧‍👦", name: "Family Meal Deal",           detail: "24pc Wings + Fries + Mozz — $49", sub: "Feed the whole crew" },
+  { day: "Thursday",  emoji: "🐔", name: "$4.99 Chicken Sandwich",     detail: "The Cosmic Crispy",                sub: "Fried thigh, spicy mayo" },
+  { day: "Friday",    emoji: "🍔", name: "$4.99 Classic Burger",       detail: "The Classic Smash",                sub: "Every Friday, all day" },
+  { day: "Saturday",  emoji: "🍟", name: "Free Large Fry",            detail: "With any 24pc wings order",        sub: "Every Saturday" },
 ];
 
 type CardProps = {

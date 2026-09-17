@@ -49,27 +49,26 @@ const menu = [
   {
     category: "Fan Fav's",
     items: [
-      { name: "The Cosmic Crispy", description: "A marinated chicken thigh fried to perfection and tossed in your choice of sauce, on a potato roll with spicy mayo. Cheese and pickles optional — add beef bacon if you dare.", price: "$11.99", popular: true },
+      { name: "The Cosmic Crispy", description: "A marinated chicken thigh fried to perfection and tossed in your choice of sauce, on a potato roll with spicy mayo. Cheese and pickles optional — add beef bacon if you dare.", price: "$7.99", popular: true },
       { name: "Street Taco", description: "Tender marinated beef skirt steak topped with fresh cilantro and onions, served with house-made salsa verde on the side.", price: "$3.50", popular: true },
-      { name: "Buffalo Chicken Loaded Fries", description: "Crispy fries piled with boneless buffalo chicken and nacho cheese, finished with a ranch or blue cheese drizzle.", price: "$13.99", popular: false },
-      { name: "Chili Cheese Fries", description: "Crispy golden fries smothered in house-made beef chili and warm nacho cheese.", price: "$10.99", popular: false },
-      { name: "Breakfast Sandwich", description: "Fluffy egg omelette, crispy beef bacon and American cheese on a butter croissant or potato roll. Add a smash patty if you like.", price: "$7.99", popular: false },
+      { name: "Galaxy Fries", description: "Crispy French fries covered in melted cheese and topped with your choice of buffalo chicken, beef chili, or carne asada.", price: "$13.99", popular: true },
+      { name: "Breakfast Sandwich", description: "Fluffy egg omelette, crispy beef bacon and American cheese on a butter croissant or potato roll. Add a smash patty if you like.", price: "$6.99", popular: false },
     ],
   },
   {
     category: "Burgers",
     items: [
       { name: "The Classic Smash", description: "A juicy 4oz smashed beef patty with house burger sauce, grilled onions, pickles and American cheese on a soft potato roll.", price: "$6.99", popular: true },
-      { name: "BBQ Rodeo Burger", description: "4oz beef patty stacked with slow-simmered beef chili, a crispy onion ring, BBQ sauce, pickles and American cheese on a soft potato roll.", price: "$9.99", popular: false },
-      { name: "Jalapeño Blast Burger", description: "4oz beef patty with creamy jalapeño ranch, grilled jalapeños, melted pepper jack and crispy onions on a soft potato roll.", price: "$13.99", popular: false },
+      { name: "BBQ Rodeo Burger", description: "4oz beef patty stacked with slow-simmered beef chili, a crispy onion ring, BBQ sauce, pickles and American cheese on a soft potato roll.", price: "$8.99", popular: false },
+      { name: "Jalapeño Blast Burger", description: "4oz beef patty with creamy jalapeño ranch, grilled jalapeños, melted pepper jack and crispy onions on a soft potato roll.", price: "$7.99", popular: false },
     ],
   },
   {
     category: "Hot Dogs",
     items: [
-      { name: "Gordo's Dog", description: "A loaded beef hot link with whipped cream cheese, caramelized onions, jalapeño ranch, crispy onions and our special ketchup.", price: "$11.99", popular: true },
+      { name: "Galaxy Dog", description: "A loaded beef hot link with whipped cream cheese, caramelized onions, jalapeño ranch, crispy onions and our special ketchup.", price: "$7.99", popular: true },
       { name: "Chili Cheese Dog", description: "A beef hot link smothered in slow-simmered beef chili and warm nacho cheese.", price: "$9.99", popular: false },
-      { name: "Classic Dog", description: "A classic beef hot link on a soft potato bun — dressed just how you like it.", price: "$6.99", popular: false },
+      { name: "Boring Dog", description: "A classic beef hot link on a soft potato bun — dressed just how you like it.", price: "$6.99", popular: false },
     ],
   },
   {

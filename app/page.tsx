@@ -11,8 +11,8 @@ export const metadata = {
 
 const featured = [
   { name: "12 Bone-In Wings", desc: "Pick 2 flavors from 20+ options", price: "$18.99", tag: "Best Seller", img: "/Iceman Wings.PNG" },
-  { name: "Jalapeño Blast Burger", desc: "4oz beef, jalapeño ranch, pepper jack, crispy onions", price: "$13.99", tag: "Fan Fav", img: "/Iceman Burger.PNG" },
-  { name: "Gordo's Dog", desc: "Beef hot link, cream cheese, jalapeño ranch, crispy onions", price: "$11.99", tag: "Must Try", img: "/Iceman HotDog.PNG" },
+  { name: "Jalapeño Blast Burger", desc: "4oz beef, jalapeño ranch, pepper jack, crispy onions", price: "$7.99", tag: "Fan Fav", img: "/Iceman Burger.PNG" },
+  { name: "Galaxy Dog", desc: "Beef hot link, cream cheese, jalapeño ranch, crispy onions", price: "$7.99", tag: "Must Try", img: "/Iceman HotDog.PNG" },
   { name: "Biscoff Pudding", desc: "Decadent, creamy, luscious", price: "$3.97", tag: "Popular", img: "/biscoff pudding.jpeg" },
 ];
 

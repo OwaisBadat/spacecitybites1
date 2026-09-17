@@ -51,7 +51,7 @@ const menu = [
     items: [
       { name: "The Cosmic Crispy", description: "A marinated chicken thigh fried to perfection and tossed in your choice of sauce, on a potato roll with spicy mayo. Cheese and pickles optional — add beef bacon if you dare.", price: "$7.99", popular: true },
       { name: "Street Taco", description: "Tender marinated beef skirt steak topped with fresh cilantro and onions, served with house-made salsa verde on the side.", price: "$3.50", popular: true },
-      { name: "Galaxy Fries", description: "Crispy French fries covered in melted cheese and topped with your choice of buffalo chicken, beef chili, or carne asada.", price: "$13.99", popular: true },
+      { name: "Galaxy Fries", description: "Crispy French fries covered in melted cheese and topped with your choice of buffalo chicken, beef chili, or carne asada.", price: "$6.99+", popular: true },
       { name: "Breakfast Sandwich", description: "Fluffy egg omelette, crispy beef bacon and American cheese on a butter croissant or potato roll. Add a smash patty if you like.", price: "$6.99", popular: false },
     ],
   },

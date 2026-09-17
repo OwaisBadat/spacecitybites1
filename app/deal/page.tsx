@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { reportOrderClick } from "@/lib/analytics";
+import { isGameDay } from "@/lib/gamedays";
 
 const deals = [
   { day: "Sunday",    emoji: "🥪", name: "$4.99 Breakfast Sandwich",   detail: "Egg, beef bacon & cheese",         sub: "All day Sunday" },
@@ -62,9 +63,11 @@ function DealCard({ variant, badge, emoji, img, name, detail, sub }: CardProps) 
 
 export default function DealPage() {
   const [daily, setDaily] = useState(deals[0]);
+  const [gameDay, setGameDay] = useState(false);
 
   useEffect(() => {
     setDaily(deals[new Date().getDay()]);
+    setGameDay(isGameDay());
   }, []);
 
   return (
@@ -84,11 +87,13 @@ export default function DealPage() {
         {/* Heading */}
         <div className="text-center">
           <p className="text-blue-300 text-[11px] font-bold uppercase tracking-[0.25em]">Space City Bites · Houston</p>
-          <h1 className="text-3xl sm:text-4xl font-black uppercase tracking-tight text-white mt-1.5">Today&apos;s Deal</h1>
+          <h1 className="text-3xl sm:text-4xl font-black uppercase tracking-tight text-white mt-1.5">
+            {gameDay ? "Today’s Deals" : "Today’s Deal"}
+          </h1>
         </div>
 
-        {/* Card */}
-        <div className="w-full grid gap-4 max-w-sm">
+        {/* Cards */}
+        <div className={`w-full grid gap-4 ${gameDay ? "sm:grid-cols-2" : "max-w-sm"}`}>
           <DealCard
             variant="day"
             badge={`Today · ${daily.day}`}
@@ -97,6 +102,16 @@ export default function DealPage() {
             detail={daily.detail}
             sub={daily.sub}
           />
+          {gameDay && (
+            <DealCard
+              variant="special"
+              badge="🏈 Game Day"
+              img="/Iceman Wings.PNG"
+              name="99¢ Wings"
+              detail="With any drink purchase"
+              sub="Bone-in or boneless · Texans game day"
+            />
+          )}
         </div>
 
         {/* One Order Now button */}

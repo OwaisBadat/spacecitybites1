@@ -1,5 +1,8 @@
 "use client";
 
+import { useEffect, useState } from "react";
+import { isGameDay } from "@/lib/gamedays";
+
 const deals = [
   { day: "MON", deal: "$4.99 Hot Dog", detail: "Loaded your way — all day", emoji: "🌭" },
   { day: "TUE", deal: "99¢ Tacos", detail: "Beef skirt steak street tacos", emoji: "🌮" },
@@ -14,10 +17,30 @@ export default function TodaysDeal() {
   const todayIndex = new Date().getDay();
   const dealIndex = todayIndex === 0 ? 6 : todayIndex - 1;
 
+  const [gameDay, setGameDay] = useState(false);
+  useEffect(() => {
+    setGameDay(isGameDay());
+  }, []);
+
   return (
     <div className="max-w-3xl mx-auto">
       <p className="text-red-200 text-xs uppercase tracking-widest mb-2 text-center">Something delicious. Every day.</p>
       <h2 className="text-3xl sm:text-4xl font-black uppercase tracking-tight mb-10 text-center text-white">Daily Deals</h2>
+
+      {gameDay && (
+        <a
+          href="/deal"
+          className="flex items-center gap-4 rounded-xl px-5 py-4 mb-3 border-2 border-yellow-400 bg-gradient-to-r from-red-700 to-red-800 shadow-xl shadow-red-900/40"
+        >
+          <span className="text-2xl shrink-0">🏈</span>
+          <div className="flex-1 min-w-0">
+            <p className="font-black text-white">Game Day Special · 99¢ Wings</p>
+            <p className="text-sm text-yellow-200">Texans game day — with any drink · bone-in or boneless</p>
+          </div>
+          <span className="shrink-0 bg-yellow-400 text-red-900 text-[10px] font-black uppercase px-2 py-1 rounded-full">Today</span>
+        </a>
+      )}
+
       <div className="space-y-3">
         {deals.map(({ day, deal, detail, emoji }, i) => {
           const isToday = i === dealIndex;

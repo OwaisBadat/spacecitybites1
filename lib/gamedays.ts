@@ -35,3 +35,13 @@ function houstonToday(now: Date = new Date()): string {
 export function isGameDay(now: Date = new Date()): boolean {
   return GAME_DAYS.includes(houstonToday(now));
 }
+
+// Whole-season window for the promo banner: active now through the day after the
+// final game, so it auto-turns off once the season ends.
+export const SEASON_START = "2026-09-01";
+export const SEASON_END = "2027-01-11"; // day after Wk18 (2027-01-10)
+
+export function isSeasonActive(now: Date = new Date()): boolean {
+  const today = houstonToday(now);
+  return today >= SEASON_START && today <= SEASON_END;
+}

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Nav";
+import GameDayBanner from "@/components/GameDayBanner";
 import FloatingOrder from "@/components/FloatingOrder";
 import { Analytics } from "@vercel/analytics/next";
 import GoogleAnalytics from "@/components/analytics/GoogleAnalytics";
@@ -80,6 +81,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <GoogleAnalytics />
         <MetaPixel />
         <TikTokPixel />
+        <GameDayBanner />
         <Nav />
         <FloatingOrder />
         <main className="flex-1">{children}</main>

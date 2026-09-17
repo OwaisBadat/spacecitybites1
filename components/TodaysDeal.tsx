@@ -35,7 +35,7 @@ export default function TodaysDeal() {
           <span className="text-2xl shrink-0">🏈</span>
           <div className="flex-1 min-w-0">
             <p className="font-black text-white">Game Day Special · 99¢ Wings</p>
-            <p className="text-sm text-yellow-200">Texans game day — with any drink · bone-in or boneless</p>
+            <p className="text-sm text-yellow-200">Texans game day — bone-in or boneless</p>
           </div>
           <span className="shrink-0 bg-yellow-400 text-red-900 text-[10px] font-black uppercase px-2 py-1 rounded-full">Today</span>
         </a>

@@ -108,8 +108,8 @@ export default function DealPage() {
               badge="🏈 Game Day"
               img="/Iceman Wings.PNG"
               name="99¢ Wings"
-              detail="With any drink purchase"
-              sub="Bone-in or boneless · Texans game day"
+              detail="Bone-in or boneless"
+              sub="Texans game day"
             />
           )}
         </div>

@@ -31,7 +31,7 @@ export default function GameDayBanner() {
         <span className="text-red-500">99¢ Wings</span> every time the Texans play
       </span>
       <span className="hidden sm:inline text-xs font-black uppercase tracking-wider text-white/60">
-        With any drink →
+        Bone-in or boneless →
       </span>
     </Link>
   );

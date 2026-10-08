@@ -28,12 +28,8 @@ export default function ContactPage() {
           <h2 className="text-xs uppercase tracking-widest text-red-500 mb-3">Hours</h2>
           <div className="space-y-1">
             <div className="flex justify-between text-sm">
-              <span className="text-neutral-400">Mon – Thu</span>
+              <span className="text-neutral-400">Mon – Sat</span>
               <span className="text-neutral-200 font-medium">12pm – 12am</span>
-            </div>
-            <div className="flex justify-between text-sm">
-              <span className="text-neutral-400">Fri – Sat</span>
-              <span className="text-neutral-200 font-medium">12pm – 2am</span>
             </div>
             <div className="flex justify-between text-sm">
               <span className="text-neutral-400">Sunday</span>

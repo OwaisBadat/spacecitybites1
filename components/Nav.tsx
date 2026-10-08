@@ -108,7 +108,7 @@ export default function Nav() {
           </div>
           <div className="mt-4 text-neutral-500 text-sm border-t border-neutral-800 pt-4">
             <p>3729 W Alabama St, Unit C · Houston, TX</p>
-            <p className="mt-1">Mon–Thu 12pm–12am · Fri–Sat 12pm–2am · Sun 12pm–9pm</p>
+            <p className="mt-1">Mon–Sat 12pm–12am · Sun 12pm–9pm</p>
           </div>
         </div>
       )}

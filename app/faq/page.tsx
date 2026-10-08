@@ -17,7 +17,7 @@ const faqs = [
   },
   {
     q: "What are your hours?",
-    a: "Monday–Thursday: 12pm–12am · Friday–Saturday: 12pm–2am · Sunday: 12pm–9pm.",
+    a: "Monday–Saturday: 12pm–12am · Sunday: 12pm–9pm.",
   },
   {
     q: "How many wing flavors do you have?",

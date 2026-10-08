@@ -62,8 +62,7 @@ export default function Home() {
       <section className="grid grid-cols-2 sm:grid-cols-4 divide-x divide-blue-800/60 border-y border-blue-800/60 bg-blue-900">
         {[
           { label: "Location", value: "3729 W Alabama St, Unit C" },
-          { label: "Mon – Thu", value: "12pm – 12am" },
-          { label: "Fri – Sat", value: "12pm – 2am" },
+          { label: "Mon – Sat", value: "12pm – 12am" },
           { label: "Sunday", value: "12pm – 9pm" },
         ].map(({ label, value }) => (
           <div key={label} className="flex flex-col items-center py-5 px-3 text-center">

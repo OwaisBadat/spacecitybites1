@@ -56,7 +56,7 @@ export default function AboutPage() {
           { label: "100%", sub: "Halal Certified" },
           { label: "20+", sub: "Wing Flavors" },
           { label: "7", sub: "Daily Deals" },
-          { label: "Late", sub: "Open Until 2am Fri & Sat" },
+          { label: "Late", sub: "Open Until Midnight Mon–Sat" },
         ].map(({ label, sub }) => (
           <div key={sub} className="bg-neutral-900 border border-neutral-800 rounded-2xl p-5 text-center">
             <p className="text-red-500 font-black text-2xl">{label}</p>

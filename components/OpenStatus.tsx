@@ -5,13 +5,13 @@ import { useEffect, useState } from "react";
 type Status = "open" | "closing" | "closed";
 
 const hours = [
-  { open: 12, close: 24 },
-  { open: 12, close: 24 },
-  { open: 12, close: 24 },
-  { open: 12, close: 24 },
-  { open: 12, close: 26 },
-  { open: 12, close: 26 },
-  { open: 12, close: 21 },
+  { open: 12, close: 21 }, // Sunday 12pm–9pm
+  { open: 12, close: 24 }, // Monday 12pm–12am
+  { open: 12, close: 24 }, // Tuesday
+  { open: 12, close: 24 }, // Wednesday
+  { open: 12, close: 24 }, // Thursday
+  { open: 12, close: 24 }, // Friday
+  { open: 12, close: 24 }, // Saturday
 ];
 
 function getStatus(): Status {

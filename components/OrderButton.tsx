@@ -11,7 +11,7 @@ interface OrderButtonProps {
 export default function OrderButton({ location, className, children }: OrderButtonProps) {
   return (
     <a
-      href="https://wings-87-alabama-street-houston.cloveronline.com"
+      href="https://spacecitybiteshtx.cloveronline.com/menu/all"
       target="_blank"
       rel="noopener noreferrer"
       className={className}

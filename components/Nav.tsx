@@ -52,7 +52,7 @@ export default function Nav() {
             </Link>
           ))}
           <a
-            href="https://wings-87-alabama-street-houston.cloveronline.com"
+            href="https://spacecitybiteshtx.cloveronline.com/menu/all"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-red-600 hover:bg-red-500 text-white text-xs font-black uppercase tracking-wider px-4 py-2 rounded-full transition-colors"
@@ -97,7 +97,7 @@ export default function Nav() {
               📞 Call
             </a>
             <a
-              href="https://wings-87-alabama-street-houston.cloveronline.com"
+              href="https://spacecitybiteshtx.cloveronline.com/menu/all"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => { setOpen(false); reportOrderClick("mobile_nav"); }}

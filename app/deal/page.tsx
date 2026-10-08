@@ -116,7 +116,7 @@ export default function DealPage() {
 
         {/* One Order Now button */}
         <a
-          href="https://wings-87-alabama-street-houston.cloveronline.com"
+          href="https://spacecitybiteshtx.cloveronline.com/menu/all"
           target="_blank"
           rel="noopener noreferrer"
           onClick={() => reportOrderClick("deal_page")}

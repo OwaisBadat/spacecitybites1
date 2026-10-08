@@ -12,7 +12,7 @@ _Last updated: 2026-07-23_
 | Channel | Status | Notes |
 |---|---|---|
 | Website | Live | `https://www.spacecitybiteshtx.com` (Vercel, Next.js) |
-| Ordering | Clover | `https://wings-87-alabama-street-houston.cloveronline.com` |
+| Ordering | Clover | `https://spacecitybiteshtx.cloveronline.com/menu/all` |
 | Conversion tracking | Live | Order Now clicks → Google Ads (verified) |
 | Search campaign | Launched | "Search – Halal Wings", $10/day, learning |
 | Performance Max | Running | "New Deal Every Day", $15.20/day, ~$60/conv (calls) |
@@ -215,7 +215,7 @@ GBP often out-earns paid ads for a local restaurant. Keep it strong.
 | Item | Value |
 |---|---|
 | Site | https://www.spacecitybiteshtx.com |
-| Clover ordering | https://wings-87-alabama-street-houston.cloveronline.com |
+| Clover ordering | https://spacecitybiteshtx.cloveronline.com/menu/all |
 | Google review | https://g.page/r/CWrsJBfZH7BdEBM/review |
 | Instagram | https://instagram.com/space_city_bites |
 | TikTok | https://www.tiktok.com/@spacecitybites |

@@ -14,7 +14,7 @@ export default function FloatingOrder() {
         📞 Call
       </a>
       <a
-        href="https://wings-87-alabama-street-houston.cloveronline.com"
+        href="https://spacecitybiteshtx.cloveronline.com/menu/all"
         target="_blank"
         rel="noopener noreferrer"
         className="flex-[2] bg-red-600 text-white text-center font-black uppercase tracking-wider py-4 rounded-full text-sm shadow-xl shadow-red-900/40"

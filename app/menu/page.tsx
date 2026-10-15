@@ -39,18 +39,20 @@ const menu = [
   {
     category: "Combos",
     items: [
-      { name: "6 Pc Bone-In Wing Combo", description: "Six crispy skin-on bone-in wings in your choice of flavor, served with fries and a drink.", price: "$12.99", popular: true },
-      { name: "12 Pc Bone-In Wing Combo", description: "A dozen bone-in wings across two flavors, with fries and a drink.", price: "$21.99", popular: false },
-      { name: "5 Pc Boneless Combo", description: "Five juicy boneless wings in one flavor, with fries and a drink.", price: "$10.99", popular: false },
-      { name: "10 Pc Boneless Combo", description: "Ten boneless wings across two flavors, with fries and a drink.", price: "$18.99", popular: false },
-      { name: "Classic Burger Combo", description: "Our Classic beef smash burger served with fries and a drink.", price: "$9.99", popular: true },
+      { name: "6 Pc Bone-In Wing Combo", description: "Six crispy skin-on bone-in wings in your choice of flavor, with your choice of side and a drink.", price: "$12.99", popular: true },
+      { name: "12 Pc Bone-In Wing Combo", description: "A dozen bone-in wings across two flavors, with your choice of side and a drink.", price: "$21.99", popular: false },
+      { name: "5 Pc Boneless Combo", description: "Five juicy boneless wings in one flavor, with your choice of side and a drink.", price: "$10.99", popular: false },
+      { name: "10 Pc Boneless Combo", description: "Ten boneless wings across two flavors, with your choice of side and a drink.", price: "$18.99", popular: false },
+      { name: "Classic Burger Combo", description: "Our Classic beef smash burger with your choice of side and a drink.", price: "$9.99", popular: true },
+      { name: "Space City Meal", description: "Your choice of burger or hot dog, plus 4 wings, a side and a drink. Choice of side: fries, mozzarella sticks or onion rings.", price: "Price varies", popular: true },
     ],
   },
   {
     category: "Fan Fav's",
     items: [
       { name: "The Cosmic Crispy", description: "A marinated chicken thigh fried to perfection and tossed in your choice of sauce, on a potato roll with spicy mayo. Cheese and pickles optional — add beef bacon if you dare.", price: "$7.99", popular: true },
-      { name: "Street Taco", description: "Tender marinated beef skirt steak topped with fresh cilantro and onions, served with house-made salsa verde on the side.", price: "$3.50", popular: true },
+      { name: "Chicken Street Taco", description: "Marinated chicken topped with fresh cilantro and onions, served with house-made salsa verde on the side.", price: "$2.50", popular: false },
+      { name: "Steak Street Taco", description: "Tender marinated beef skirt steak topped with fresh cilantro and onions, served with house-made salsa verde on the side.", price: "$3.50", popular: true },
       { name: "Galaxy Fries", description: "Crispy French fries covered in melted cheese and topped with your choice of buffalo chicken, beef chili, or carne asada.", price: "$6.99+", popular: true },
       { name: "Breakfast Sandwich", description: "Fluffy egg omelette, crispy beef bacon and American cheese on a butter croissant or potato roll. Add a smash patty if you like.", price: "$6.99", popular: false },
     ],
